@@ -9,6 +9,7 @@ body {
 
 #container {
     margin: 50px 0 0 50px;
+    width: fit-content;
 }
 
 #profile {
