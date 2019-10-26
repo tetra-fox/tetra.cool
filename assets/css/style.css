@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: monospace;
+    font-size: 14pt;
+}
+
+#container {
+    margin: 50px 0 0 50px;
+}
+
+#profile {
+    width: 128px;
+    height: 128px;
+    background: url("../img/profile.gif");
+    background-size: cover;
+    margin: 10px;
+}
+
+#name {
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+#links {
+    margin-left: 15px;
+    border-left: 2px #E3E3E3 solid;
+}
+
+#links>a {
+    display: block;
+    margin: 0 0 4px 10px;
+    /* transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+}
+
+#links>a:hover {
+    margin-left: 15px;
+}
+
+a:visited {
+    color: rgb(0, 0, 238);
+}
