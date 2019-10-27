@@ -55,12 +55,17 @@ a:visited {
 }
 
 #nowplaying {
-    display: none;
+    opacity: 0;
     color: #888888;
     font-size: 10pt;
+    transition: opacity 1s;
 }
 
 #nowplaying::before {
     content: "♫ ";
     color: #444444;
+}
+
+#nowplaying.visible {
+    opacity: 1;
 }
