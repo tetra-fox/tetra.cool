@@ -2,11 +2,15 @@
 	<head>
 		<title>tetra</title>
 		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="assets/js/paper.js/paper-full.min.js"></script>
+		<script src="assets/js/paper.js/waves.js" type="text/paperscript" canvas="paper"></script>
+		<script defer src="assets/js/nowplaying.js"></script>
 	</head>
 	<body>
 		<div id="container">
 			<div id="profile" title="art by @marleemutt"></div>
 			<span id="name">tetra</span>
+			<span id="nowplaying"></span>
 			<div id="links">
 				<a href="https://github.com/tetra-fox">github</a>
 				<a href="https://twitter.com/tetrafox_">twitter</a>
@@ -14,5 +18,6 @@
 				<a href="mailto:me@tetrafox.pw">e-mail</a>
 			</div>
 		</div>
+		<canvas id="paper" resize></canvas>
 	</body>
 </html>
