@@ -1,4 +1,4 @@
-const websocket = "ws://mercury-chungkingosaurus.glitch.me";
+const websocket = "wss://mercury-chungkingosaurus.glitch.me";
 
 const socket = io(websocket);
 
