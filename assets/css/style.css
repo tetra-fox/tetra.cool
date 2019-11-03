@@ -20,7 +20,8 @@ body {
     background: url("../img/anim.png");
     background-size: cover;
     margin: 10px;
-    animation: zzz 3s steps(4) infinite;
+    animation: zzz 3s steps(4) infinite, float 2s ease-in-out infinite alternate;
+    /* image-rendering: pixelated; */
 }
 
 #name {
@@ -74,5 +75,14 @@ a:visited {
 @keyframes zzz {
     to {
         background-position-x: 2000px;
+    }
+}
+
+@keyframes float {
+    from {
+        background-position-y: -1px;
+    }
+    to {
+        background-position-y: 1px;
     }
 }
