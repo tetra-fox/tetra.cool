@@ -15,11 +15,12 @@ body {
 }
 
 #profile {
-    width: 128px;
-    height: 128px;
-    background: url("../img/profile.gif");
+    width: 100px;
+    height: 100px;
+    background: url("../img/anim.png");
     background-size: cover;
     margin: 10px;
+    animation: zzz 3s steps(4) infinite;
 }
 
 #name {
@@ -68,4 +69,10 @@ a:visited {
 
 #nowplaying.visible {
     opacity: 1;
+}
+
+@keyframes zzz {
+    to {
+        background-position-x: 2000px;
+    }
 }
