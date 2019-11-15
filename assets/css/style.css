@@ -82,6 +82,7 @@ a:visited {
     from {
         background-position-y: -1px;
     }
+
     to {
         background-position-y: 1px;
     }
@@ -91,22 +92,40 @@ a:visited {
     body {
         background: #000;
     }
+
     #container {
         background: rgba(255, 255, 255, 0.2);
     }
+
     #name {
         color: #fff;
     }
+
     #nowplaying {
         color: #ddd;
     }
+
     #nowplaying::before {
         color: #bbb;
     }
+
     #links>a {
         color: #69b7ff;
     }
+
     a:visited {
         color: #69b7ff;
+    }
+}
+
+@media only screen and (pointer: coarse) and (hover: none) {
+    #container {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        zoom: 2;
+        max-width: 70%;
     }
 }
