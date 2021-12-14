@@ -1,79 +1,79 @@
 * {
-	margin: 0;
+    margin: 0;
 }
 
 body {
-	background-image: url("../img/bg.png");
-	background-size: cover;
-	font-family: "Alegreya Sans SC", sans-serif;
-	font-size: 14pt;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 14pt;
 }
 
 #container {
-	width: 500px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 70%;
-}
-
-#name {
-	color: #fff;
-	font-weight: 700;
-	font-size: 18pt;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
 }
 
 #logo {
-	max-width: 140px;
+    background-image: url("../img/tetra.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    filter: invert(0.9);
+    width: 100px;
+    height: 26px;
 }
 
 #links {
-	> a {
-		display: table;
-		color: #ff3ed0;
-		font-weight: 500;
-		text-decoration: none;
-		transition: letter-spacing 0.6s cubic-bezier(0.13, 0.62, 0, 0.97);
-		&:hover {
-			letter-spacing: 1px;
-			animation: flash 1ms infinite step-end;
-		}
-		&:active {
-			letter-spacing: 2px;
-		}
-	}
+    > a {
+        display: table;
+        color: #ff419d;
+        font-weight: 500;
+        text-decoration: none;
+        transition: letter-spacing 0.6s cubic-bezier(0.13, 0.62, 0, 0.97);
+
+        &:hover {
+            letter-spacing: 1px;
+            animation: flash 1ms infinite step-end;
+        }
+
+        &:active {
+            letter-spacing: 2px;
+        }
+    }
 }
 
 #nowplaying {
-	opacity: 0;
-	margin-left: 5px;
-	color: #ddd;
-	font-size: 10pt;
-	transition: opacity 1s;
+    opacity: 0;
+    margin-left: 5px;
+    color: #ddd;
+    font-size: 10pt;
+    transition: opacity 1s;
 
-	&::before {
-		content: "♫";
-		margin-right: 3px;
-		color: #bbb;
-	}
-}
+    &::before {
+        content: "♫";
+        margin-right: 3px;
+        color: #bbb;
+    }
 
-#nowplaying.visible {
-	opacity: 1;
+    &.visible {
+        opacity: 1;
+    }
 }
 
 @media only screen and (pointer: coarse) and (hover: none) {
-	#container {
-		zoom: 2;
-	}
+    #container {
+        zoom: 2;
+    }
 }
 
 @keyframes flash {
-	0% {
-		color: #ff3ed0;
-	}
-	50% {
-		color: #0781ff;
-	}
+    0% {
+        color: #ff419d;
+    }
+    50% {
+        color: #0781ff;
+    }
 }
