@@ -7,6 +7,10 @@ body {
     font-size: 14pt;
 }
 
+canvas {
+    pointer-events: none;
+}
+
 #container {
     width: 500px;
     position: absolute;
