@@ -30,7 +30,7 @@ vec3 stars(in vec2 st) {
   return color + p(st);
 }
 
-#define scale 150.0
+#define scale 100.0
 
 void main(void) {
   vec2 st = (gl_FragCoord.xy - 0.5 * inputPixel.xy) / inputPixel.y;

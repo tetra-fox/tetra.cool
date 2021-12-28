@@ -1,6 +1,6 @@
 import * as PIXI from "pixi.js";
 import { AdvancedBloomFilter, GlitchFilter } from "pixi-filters";
-import * as Dog from "../img/dog.png";
+import * as Dog from "../img/dog.webp";
 import * as stars from "../shaders/stars.frag";
 
 let app = new PIXI.Application({ resizeTo: window });
@@ -52,8 +52,8 @@ app.ticker.add(() => {
     // resize background to screen
     uniforms.time = elapsed / 60;
 
-    bg.width = app.renderer.screen.width * 3;
-    bg.height = app.renderer.screen.height * 3;
+    bg.width = app.renderer.screen.width;
+    bg.height = app.renderer.screen.height;
 });
 
 bg.filters = [starsFilter, glitchFilter];
