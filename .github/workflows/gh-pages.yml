@@ -1,5 +1,7 @@
-name: Build and Publish
-on: [push, workflow_dispatch]
+name: Build and Deploy
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,6 +23,21 @@ jobs:
       - name: Webpack
         run: yarn build
 
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          name: dist
+          path: dist
+
+  deploy:
+      runs-on: ubuntu-latest
+      needs: build
+      if: github.ref == 'refs/heads/main'
+      concurrency: 
+        group: ${{ github.ref }}-deploy
+        cancel-in-progress: true
+
+      steps:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
