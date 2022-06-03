@@ -6,17 +6,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2.4.0
+      - name: Checkout repository
+        uses: actions/checkout@v3.0.2
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.5.0
+        uses: actions/setup-node@v3.2.0
         with:
-          node-version: "14"
+          node-version: 16
+          cache: yarn
 
-      - name: Restore dependencies and build
-        run: |
-          npm ci
-          npm run build
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Webpack
+        run: yarn build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.7

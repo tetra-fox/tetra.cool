@@ -1,7 +1,7 @@
-// styles
 import "../scss/style.scss";
+import App from "../svelte/App.svelte";
 
-// components
-import "./background.ts";
-import "./nowplaying.ts";
-import "./hover.ts";
+export default new App({
+  target: document.body,
+  props: {title: "tetra"}
+});
