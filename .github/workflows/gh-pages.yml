@@ -38,6 +38,14 @@ jobs:
         cancel-in-progress: true
 
       steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3.0.2
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
