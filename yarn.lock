@@ -3548,10 +3548,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svelte-check-plugin@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/svelte-check-plugin/-/svelte-check-plugin-1.0.2.tgz#9c941a382702c45c08644a717134a652b54994e3"
-  integrity sha512-qs8VmI1pt84yuM6Y1rCfXI75h3y3W0M4Bdoc0xR2sacx/I/yYyMYv28MTnMHTI0gKvtXCvaM4IqBK2BVUFekkg==
+svelte-check-plugin@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/svelte-check-plugin/-/svelte-check-plugin-1.0.3.tgz#0afabe6743931b5239543a2d217794e0d39c5f7b"
+  integrity sha512-5hoqXEn0Ai/25QhyvZKN9qwCSJ7O5zJ3Kf3z9HXs1OrE5e4qHkOE5fR4kDC6bmXdaCl6uppbmYxHBzmIfLtcbg==
 
 svelte-check@2.7.2:
   version "2.7.2"
