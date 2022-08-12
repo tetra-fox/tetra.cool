@@ -35,10 +35,10 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
   integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
 
-"@fontsource/alegreya-sans-sc@4.5.8":
-  version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/alegreya-sans-sc/-/alegreya-sans-sc-4.5.8.tgz#fc35a50246a69fe7272cf5a02124330d61a7fd9c"
-  integrity sha512-Y8dCkKaeBkugbVK/uA57+KUZw0Bc7OGh6SS7dcyd8xclusc6WqndpwJjBBJkKkcahzJxaO7h/Q8QFfPBqItEEA==
+"@fontsource/alegreya-sans-sc@4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/alegreya-sans-sc/-/alegreya-sans-sc-4.5.9.tgz#96dd9015410239061ed381e815739890b09c1940"
+  integrity sha512-I36ZTrGWj4kHY3FlLN4XD4Qz1QCdrleBE9kOhSM8NKJBEYeW0CwDufGnY6PJC7I1iAnz7/FMqTeMnsf7ewQvrA==
 
 "@jridgewell/gen-mapping@^0.3.0":
   version "0.3.1"
