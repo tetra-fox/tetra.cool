@@ -10,7 +10,7 @@
     },
     "devDependencies": {
         "@fontsource/alegreya-sans-sc": "4.5.9",
-        "@types/node": "17.0.42",
+        "@types/node": "18.7.13",
         "@types/webpack": "5.28.0",
         "autoprefixer": "10.4.8",
         "copy-webpack-plugin": "11.0.0",
