@@ -2051,14 +2051,14 @@ html-minifier-terser@^7.0.0:
     relateurl "^0.2.7"
     terser "^5.14.2"
 
-html-minimizer-webpack-plugin@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/html-minimizer-webpack-plugin/-/html-minimizer-webpack-plugin-4.1.0.tgz#ae2bfaf025ecd1e9956d9953a1836379d4f6af24"
-  integrity sha512-tv2HYLank52r6j1E5m23d0nONr9YJbyrQZS66vVaD603pqTCbEXM0AgUh12Dlj3q5cEQlPjXUJMUdqz+W/ZI5g==
+html-minimizer-webpack-plugin@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/html-minimizer-webpack-plugin/-/html-minimizer-webpack-plugin-4.2.0.tgz#6cb0ad46e038a144cc87a8e0279a9b4a12d036a3"
+  integrity sha512-44K/dmuMXs8wyGsF1eto9qGBqpD0ZwYHJsNBqqqElv2Vl50m3hsrAxY0O28T1zzlJUB28gkm9u0nXVmAhWdYaQ==
   dependencies:
     "@types/html-minifier-terser" "^7.0.0"
     html-minifier-terser "^7.0.0"
-    jest-worker "^27.5.1"
+    jest-worker "^29.0.3"
     schema-utils "^4.0.0"
     serialize-javascript "^6.0.0"
 
@@ -2302,7 +2302,7 @@ jest-util@^29.1.2:
     graceful-fs "^4.2.9"
     picomatch "^2.2.3"
 
-jest-worker@^27.4.5, jest-worker@^27.5.1:
+jest-worker@^27.4.5:
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-27.5.1.tgz#8d146f0900e8973b106b6f73cc1e9a8cb86f8db0"
   integrity sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==
