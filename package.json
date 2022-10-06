@@ -16,7 +16,7 @@
         "copy-webpack-plugin": "11.0.0",
         "css-loader": "6.7.1",
         "css-minimizer-webpack-plugin": "4.2.1",
-        "html-minimizer-webpack-plugin": "4.2.0",
+        "html-minimizer-webpack-plugin": "4.2.1",
         "html-webpack-plugin": "5.5.0",
         "mini-css-extract-plugin": "2.6.1",
         "pixi-filters": "4.2.0",
