@@ -2051,10 +2051,10 @@ html-minifier-terser@^7.0.0:
     relateurl "^0.2.7"
     terser "^5.14.2"
 
-html-minimizer-webpack-plugin@4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/html-minimizer-webpack-plugin/-/html-minimizer-webpack-plugin-4.2.1.tgz#fa62b3a2604bb8caae94828ff45add831e33b45c"
-  integrity sha512-dgZWGodDLIE7sDNp5bRVLP4bZSkWNeOFAiPmJk0mc+7f0gDOMbECRxHAK81ih6WbkgGLzVt1BKQ+rKvTIrSz5Q==
+html-minimizer-webpack-plugin@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/html-minimizer-webpack-plugin/-/html-minimizer-webpack-plugin-4.3.0.tgz#669ebf64f72116c8debc0db839d8a77116ebe0f8"
+  integrity sha512-5mavtZBFcH0EziKWM/bUDdFJjV3OGxk+ZnvCoL+rkDypyDZFtFg104ZzqRR898fiJTdPToIWo2ddxhmwHse9tA==
   dependencies:
     "@types/html-minifier-terser" "^7.0.0"
     html-minifier-terser "^7.0.0"
