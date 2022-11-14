@@ -1,4 +1,4 @@
-# tetra.cool [![Build and Deploy](https://github.com/tetra-fox/tetra.cool/actions/workflows/gh-pages.yml/badge.svg?branch=main)](https://github.com/tetra-fox/tetra.cool/actions/workflows/gh-pages.yml)
+# tetra.cool
 🌐 Personal website
 
 <div align="center">
