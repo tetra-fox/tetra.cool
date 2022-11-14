@@ -1,9 +1,9 @@
 import * as PIXI from "pixi.js";
-import { AdvancedBloomFilter, GlitchFilter } from "pixi-filters";
+import { AdvancedBloomFilter, GlitchFilter, AsciiFilter } from "pixi-filters";
 import stars from "../shaders/stars.frag?raw";
 import tetra from "../img/dog.webp";
 
-export function init() {
+export function init(error = false) {
 	const app = new PIXI.Application({ resizeTo: window });
 	document.body.appendChild(app.view);
 
@@ -43,7 +43,8 @@ export function init() {
 
 	// stars shader
 
-	const uniforms = { time: 0 };
+	const color = (error) ? [0.8, 0.0, 0.2] : [0.3, 0.1, 0.2];
+	const uniforms = { time: 0 , color };
 
 	const starsFilter = new PIXI.Filter(undefined, stars, uniforms);
 
@@ -51,8 +52,11 @@ export function init() {
 		.beginFill(0x000000)
 		.drawRect(0, 0, app.screen.width, app.screen.height);
 
+	const seed = Math.random() * 1000;
+
 	app.ticker.add(() => {
-		uniforms.time = elapsed / 60;
+		uniforms.time = elapsed / 60 + seed;
+		if (error) uniforms.time += (Math.random() * 1.5) + seed
 
 		// resize background to screen
 		bg.width = app.renderer.width;
@@ -60,8 +64,9 @@ export function init() {
 	});
 
 	bg.filters = [starsFilter, glitchFilter];
+	if (error) bg.filters.push(new AsciiFilter(12));
 
 	// add objects to stage
 	app.stage.addChild(bg);
-	app.stage.addChild(tetraSprite);
+	if (!error) app.stage.addChild(tetraSprite);
 }

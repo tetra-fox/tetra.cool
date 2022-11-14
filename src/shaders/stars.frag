@@ -4,6 +4,7 @@ precision highp float;
 
 uniform vec2 inputPixel;
 uniform float time;
+uniform vec3 color;
 
 float rand(in vec2 st) {
   vec2 r = fract(sin(st) * 2.7644437);
@@ -15,12 +16,10 @@ float particles(in vec2 st) {
   return 0.01 + smoothstep(0.995, 1.0, r) * max(0.0, sin(r * 34433.0 + time));
 }
 
-const vec3 PINK = vec3(0.3, 0.1, 0.2);
-
 #define p(st) particles(st)
 vec3 avg(in vec2 st, in float a) {
   vec2 A = vec2(0.0, a);
-  return PINK * (p(st) + p(st + A) + p(st + A.yx) + p(st - A) + p(st - A.yx));
+  return color * (p(st) + p(st + A) + p(st + A.yx) + p(st - A) + p(st - A.yx));
 }
 
 vec3 stars(in vec2 st) {
