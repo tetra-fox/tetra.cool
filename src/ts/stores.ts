@@ -18,7 +18,7 @@ export const song = readable(new Song(), function start(set) {
 export const links = readable([
   {
     name: "SoundCloud",
-    url: "https://soundcloud.com/tetrafox"
+    url: "https://soundcloud.com/tetramsic"
   },
   {
     name: "Spotify",
@@ -31,6 +31,10 @@ export const links = readable([
   {
     name: "Twitter",
     url: "https://twitter.com/etra_t"
+  },
+  {
+    name: "Mastodon",
+    url: "https://yiff.life/@tetra"
   },
   {
     name: "E-mail",

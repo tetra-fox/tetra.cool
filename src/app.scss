@@ -1,6 +1,3 @@
-@use "~@fontsource/alegreya-sans-sc/scss/mixins" as AlegreyaSansSC;
-@include AlegreyaSansSC.fontFace();
-
 * {
     margin: 0;
 }
@@ -8,10 +5,13 @@
 body {
     font-family: "Alegreya Sans SC", sans-serif;
     font-size: 14pt;
+    background: white;
 }
 
 canvas {
     pointer-events: none;
+    position: absolute;
+    z-index: -1;
 }
 
 #container {
@@ -24,7 +24,7 @@ canvas {
 }
 
 #logo {
-    background-image: url("../img/tetra_white.svg");
+    background-image: url("/img/tetra_white.svg");
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
