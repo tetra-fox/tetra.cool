@@ -21,6 +21,10 @@ export const links = readable([
     url: "https://soundcloud.com/tetramsic"
   },
   {
+    name: "Bandcamp",
+    url: "https://tetrafox.bandcamp.com/"
+  },
+  {
     name: "Spotify",
     url: "https://open.spotify.com/artist/3BCEPJ0GHgaZzCD5cSTEjv?si=vQ0-SYq4S6m_oiauOsS4Ww"
   },
