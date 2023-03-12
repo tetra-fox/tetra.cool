@@ -1,12 +1,12 @@
-import {readable} from "svelte/store";
-import {io} from "socket.io-client";
+import { readable } from "svelte/store";
+import { io } from "socket.io-client";
 
 import Song from "./song";
 
 export const song = readable(new Song(), function start(set) {
   const socket = io("wss://mercury-chungkingosaurus.glitch.me");
 
-  socket.on("track", data => {
+  socket.on("track", (data) => {
     set(new Song(data.artist, data.name, data.nowPlaying));
   });
 
