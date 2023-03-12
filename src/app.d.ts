@@ -1,2 +1,1 @@
-declare namespace App {
-}
+declare namespace App {}
