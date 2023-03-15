@@ -21,7 +21,7 @@ specifiers:
   socket.io-client: 4.6.1
   svelte: 3.56.0
   svelte-check: 3.1.4
-  svelte-preprocess: 5.0.1
+  svelte-preprocess: 5.0.2
   tslib: 2.5.0
   typescript: 4.9.5
   vite: 4.1.4
@@ -49,7 +49,7 @@ devDependencies:
   sass: 1.59.3
   svelte: 3.56.0
   svelte-check: 3.1.4_ph4rozdct5gtdqyhyhmplrgb5q
-  svelte-preprocess: 5.0.1_3ix232mddvf7nuoj3xzzogvzm4
+  svelte-preprocess: 5.0.2_3ix232mddvf7nuoj3xzzogvzm4
   tslib: 2.5.0
   typescript: 4.9.5
   vite: 4.1.4_sass@1.59.3
@@ -924,13 +924,6 @@ packages:
 
   /@types/pug/2.0.6:
     resolution: {integrity: sha512-SnHmG9wN1UVmagJOnyo/qkk0Z7gejYxOYYmaAwr5u2yFYfsupN3sg10kyzN8Hep/2zbHxCnsumxOoRIRMBwKCg==}
-    dev: true
-
-  /@types/sass/1.45.0:
-    resolution: {integrity: sha512-jn7qwGFmJHwUSphV8zZneO3GmtlgLsmhs/LQyVvQbIIa+fzGMUiHI4HXJZL3FT8MJmgXWbLGiVVY7ElvHq6vDA==}
-    deprecated: This is a stub types definition. sass provides its own type definitions, so you do not need this installed.
-    dependencies:
-      sass: 1.59.3
     dev: true
 
   /@types/semver/7.3.13:
@@ -3042,7 +3035,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 3.56.0
-      svelte-preprocess: 5.0.1_3ix232mddvf7nuoj3xzzogvzm4
+      svelte-preprocess: 5.0.2_3ix232mddvf7nuoj3xzzogvzm4
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -3065,8 +3058,8 @@ packages:
       svelte: 3.56.0
     dev: true
 
-  /svelte-preprocess/5.0.1_3ix232mddvf7nuoj3xzzogvzm4:
-    resolution: {integrity: sha512-0HXyhCoc9rsW4zGOgtInylC6qj259E1hpFnJMJWTf+aIfeqh4O/QHT31KT2hvPEqQfdjmqBR/kO2JDkkciBLrQ==}
+  /svelte-preprocess/5.0.2_3ix232mddvf7nuoj3xzzogvzm4:
+    resolution: {integrity: sha512-iXpIoa43VdF7fPkBdoodztZd4H+3EP/GYA66tbuLVtQnM3sWCpsOtc7HjfA7BDR+6VTpqlEnpDmPoXk0dgUa0g==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
     peerDependencies:
@@ -3080,7 +3073,7 @@ packages:
       stylus: ^0.55.0
       sugarss: ^2.0.0 || ^3.0.0 || ^4.0.0
       svelte: ^3.23.0
-      typescript: ^3.9.5 || ^4.0.0
+      typescript: '>=3.9.5 || ^4.0.0 || ^5.0.0'
     peerDependenciesMeta:
       '@babel/core':
         optional: true
@@ -3104,7 +3097,6 @@ packages:
         optional: true
     dependencies:
       '@types/pug': 2.0.6
-      '@types/sass': 1.45.0
       detect-indent: 6.1.0
       magic-string: 0.27.0
       postcss: 8.4.21
