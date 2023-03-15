@@ -1,21 +1,19 @@
-import { readable } from "svelte/store";
+import { readable, type Readable } from "svelte/store";
 import { io } from "socket.io-client";
 
-import Song from "./song";
-
-export const song = readable(new Song(), function start(set) {
+export const song: Readable<Song> = readable({ artist: "", title: "", playing: false }, (set) => {
   const socket = io("wss://mercury-chungkingosaurus.glitch.me");
 
   socket.on("track", (data) => {
-    set(new Song(data.artist, data.name, data.nowPlaying));
+    set({ artist: data.artist, title: data.name, playing: data.nowPlaying });
   });
 
-  return function stop() {
+  return () => {
     socket.close();
   };
 });
 
-export const links = readable([
+export const links: Readable<NamedLink[]> = readable([
   {
     name: "SoundCloud",
     url: "https://soundcloud.com/tetramsic"

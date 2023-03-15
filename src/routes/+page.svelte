@@ -1,15 +1,19 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import * as bg from "../ts/background";
+  import * as bg from "$lib/background";
   // import * as hover from "../ts/hover";
-  import { links, song } from "../ts/stores";
+  import { links, song } from "$lib/stores";
 
-  onMount(async () => {
+  onMount(() => {
     bg.init();
     // hover.init();
   });
 </script>
+
+<svelte:head>
+  <title>tetra</title>
+</svelte:head>
 
 <div id="container">
   <span id="logo" title="logo by evie atarax" data-hover />

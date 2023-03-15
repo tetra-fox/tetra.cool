@@ -5,7 +5,7 @@ import tetra from "../img/dog.webp";
 
 export function init(error = false) {
   const app = new PIXI.Application({ resizeTo: window });
-  document.body.appendChild(app.view);
+  document.body.appendChild(app.view as HTMLCanvasElement);
 
   const tetraSprite = PIXI.Sprite.from(tetra, {
     mipmap: PIXI.MIPMAP_MODES.ON

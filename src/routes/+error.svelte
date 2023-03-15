@@ -2,7 +2,7 @@
   import { page } from "$app/stores";
   import { onMount } from "svelte";
 
-  import * as bg from "../ts/background";
+  import * as bg from "$lib/background";
 
   onMount(async () => {
     bg.init(true);
