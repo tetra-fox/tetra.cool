@@ -13,7 +13,7 @@
     "fmt": "pnpm format"
   },
   "devDependencies": {
-    "@sveltejs/adapter-vercel": "2.4.0",
+    "@sveltejs/adapter-vercel": "2.4.1",
     "@sveltejs/kit": "1.13.0",
     "@typescript-eslint/eslint-plugin": "5.56.0",
     "@typescript-eslint/parser": "5.56.0",
