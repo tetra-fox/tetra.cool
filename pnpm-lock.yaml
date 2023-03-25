@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@fontsource/alegreya-sans-sc': 4.5.11
   '@sveltejs/adapter-vercel': 2.4.1
-  '@sveltejs/kit': 1.13.0
+  '@sveltejs/kit': 1.14.0
   '@typescript-eslint/eslint-plugin': 5.56.0
   '@typescript-eslint/parser': 5.56.0
   autoprefixer: 10.4.14
@@ -33,8 +33,8 @@ dependencies:
   socket.io-client: 4.6.1
 
 devDependencies:
-  '@sveltejs/adapter-vercel': 2.4.1_@sveltejs+kit@1.13.0
-  '@sveltejs/kit': 1.13.0_svelte@3.57.0+vite@4.2.1
+  '@sveltejs/adapter-vercel': 2.4.1_@sveltejs+kit@1.14.0
+  '@sveltejs/kit': 1.14.0_svelte@3.57.0+vite@4.2.1
   '@typescript-eslint/eslint-plugin': 5.56.0_2hcjazgfnbtq42tcc73br2vup4
   '@typescript-eslint/parser': 5.56.0_j4766f7ecgqbon3u7zlxn5zszu
   autoprefixer: 10.4.14_postcss@8.4.21
@@ -1223,12 +1223,12 @@ packages:
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
     dev: false
 
-  /@sveltejs/adapter-vercel/2.4.1_@sveltejs+kit@1.13.0:
+  /@sveltejs/adapter-vercel/2.4.1_@sveltejs+kit@1.14.0:
     resolution: {integrity: sha512-7YOHBq8onxqD5ZshQhveuSzJg9ZOicKoNZQtOnAj++0MJmPElxQ5Mjqp6aQfIhHAHl8tn5UbacCpvR39mPejgw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.13.0_svelte@3.57.0+vite@4.2.1
+      '@sveltejs/kit': 1.14.0_svelte@3.57.0+vite@4.2.1
       '@vercel/nft': 0.22.6
       esbuild: 0.16.17
     transitivePeerDependencies:
@@ -1236,8 +1236,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.13.0_svelte@3.57.0+vite@4.2.1:
-    resolution: {integrity: sha512-t44xqlSTn/k+BridiJFTD8dCRPNd9msCSSPLZT+/3P9deNp/al6ed396MSpsskK7r2kevYmmxywK16qtn6Rvjw==}
+  /@sveltejs/kit/1.14.0_svelte@3.57.0+vite@4.2.1:
+    resolution: {integrity: sha512-4e/cZT0z4IppEkqNvMrurGz6VE1gScukFU7XqwTL/yrGJGXHqS9D7RvsOcE1hASsgrMu6w/fKTIhxT5oN0K1Jw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
