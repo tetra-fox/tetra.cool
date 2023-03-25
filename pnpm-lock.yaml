@@ -11,7 +11,7 @@ specifiers:
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0
   eslint-plugin-svelte3: 4.0.0
-  pixi-filters: 5.2.0
+  pixi-filters: 5.2.1
   pixi.js: 7.2.2
   postcss: 8.4.21
   postcss-load-config: 4.0.1
@@ -28,7 +28,7 @@ specifiers:
 
 dependencies:
   '@fontsource/alegreya-sans-sc': 4.5.11
-  pixi-filters: 5.2.0_gcqvdkiiygm4agzx7cpyjxeppe
+  pixi-filters: 5.2.1_gcqvdkiiygm4agzx7cpyjxeppe
   pixi.js: 7.2.2_@pixi+utils@7.2.2
   socket.io-client: 4.6.1
 
@@ -849,8 +849,8 @@ packages:
       '@pixi/core': 7.2.2
     dev: false
 
-  /@pixi/filter-glow/5.1.1_@pixi+core@7.2.2:
-    resolution: {integrity: sha512-CXB5wKkrLkNhflsBgMv8FcGxp1SBkvyZ67kjf3znd4pJLly632OJ5bjegzAvA5/HKz1ohaFWBjsszYeScJB4nw==}
+  /@pixi/filter-glow/5.2.1_@pixi+core@7.2.2:
+    resolution: {integrity: sha512-94I4XePDF9yqqA6KQuhPSphEHPJ2lXfqJLn0Bes8VVdwft0Ianj1wALqjoSUeBWqiJbhjBEXGDNkRZhPHvY3Xg==}
     peerDependencies:
       '@pixi/core': ^7.0.0-X
     dependencies:
@@ -2743,8 +2743,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pixi-filters/5.2.0_gcqvdkiiygm4agzx7cpyjxeppe:
-    resolution: {integrity: sha512-keEjYsyAObmqWxr9zbV5XLZ4IQAL6SNKyh9V/xHDXeqx8jwC/xtEuJC6YsvGZ6REfWlvB3HgFCbmpkY2Ip0riA==}
+  /pixi-filters/5.2.1_gcqvdkiiygm4agzx7cpyjxeppe:
+    resolution: {integrity: sha512-lsRakKJfK0iH+aCCVePQcSb477hFiS20CR2p4u7xS6RO7q5qh5GhAyGqWdgYZlUT5WLSW0kxAV+FddYLs9z9Sg==}
     dependencies:
       '@pixi/filter-adjustment': 5.1.1_@pixi+core@7.2.2
       '@pixi/filter-advanced-bloom': 5.1.1_@pixi+core@7.2.2
@@ -2763,7 +2763,7 @@ packages:
       '@pixi/filter-drop-shadow': 5.2.0_@pixi+core@7.2.2
       '@pixi/filter-emboss': 5.1.1_@pixi+core@7.2.2
       '@pixi/filter-glitch': 5.1.1_@pixi+core@7.2.2
-      '@pixi/filter-glow': 5.1.1_@pixi+core@7.2.2
+      '@pixi/filter-glow': 5.2.1_@pixi+core@7.2.2
       '@pixi/filter-godray': 5.1.1_@pixi+core@7.2.2
       '@pixi/filter-grayscale': 5.1.1_@pixi+core@7.2.2
       '@pixi/filter-hsl-adjustment': 5.2.0_@pixi+core@7.2.2
