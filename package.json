@@ -15,10 +15,10 @@
   "devDependencies": {
     "@sveltejs/adapter-vercel": "2.4.1",
     "@sveltejs/kit": "1.15.0",
-    "@typescript-eslint/eslint-plugin": "5.57.0",
-    "@typescript-eslint/parser": "5.57.0",
+    "@typescript-eslint/eslint-plugin": "5.57.1",
+    "@typescript-eslint/parser": "5.57.1",
     "autoprefixer": "10.4.14",
-    "cssnano": "5.1.15",
+    "cssnano": "6.0.0",
     "eslint": "8.37.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-svelte3": "4.0.0",
@@ -42,7 +42,7 @@
   },
   "engines": {
     "node": ">=18.0.0",
-    "pnpm": ">=7.0.0"
+    "pnpm": ">=8.0.0"
   },
   "type": "module"
 }
