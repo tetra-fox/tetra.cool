@@ -31,8 +31,8 @@ devDependencies:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.21)
   cssnano:
-    specifier: 6.0.0
-    version: 6.0.0(postcss@8.4.21)
+    specifier: 6.0.1
+    version: 6.0.1(postcss@8.4.21)
   eslint:
     specifier: 8.38.0
     version: 8.38.0
@@ -1777,8 +1777,8 @@ packages:
     hasBin: true
     dev: true
 
-  /cssnano-preset-default@6.0.0(postcss@8.4.21):
-    resolution: {integrity: sha512-BDxlaFzObRDXUiCCBQUNQcI+f1/aX2mgoNtXGjV6PG64POcHoDUoX+LgMWw+Q4609QhxwkcSnS65YFs42RA6qQ==}
+  /cssnano-preset-default@6.0.1(postcss@8.4.21):
+    resolution: {integrity: sha512-7VzyFZ5zEB1+l1nToKyrRkuaJIx0zi/1npjvZfbBwbtNTzhLtlvYraK/7/uqmX2Wb2aQtd983uuGw79jAjLSuQ==}
     engines: {node: ^14 || ^16 || >=18.0}
     peerDependencies:
       postcss: ^8.2.15
@@ -1786,7 +1786,7 @@ packages:
       css-declaration-sorter: 6.4.0(postcss@8.4.21)
       cssnano-utils: 4.0.0(postcss@8.4.21)
       postcss: 8.4.21
-      postcss-calc: 8.2.4(postcss@8.4.21)
+      postcss-calc: 9.0.1(postcss@8.4.21)
       postcss-colormin: 6.0.0(postcss@8.4.21)
       postcss-convert-values: 6.0.0(postcss@8.4.21)
       postcss-discard-comments: 6.0.0(postcss@8.4.21)
@@ -1794,7 +1794,7 @@ packages:
       postcss-discard-empty: 6.0.0(postcss@8.4.21)
       postcss-discard-overridden: 6.0.0(postcss@8.4.21)
       postcss-merge-longhand: 6.0.0(postcss@8.4.21)
-      postcss-merge-rules: 6.0.0(postcss@8.4.21)
+      postcss-merge-rules: 6.0.1(postcss@8.4.21)
       postcss-minify-font-values: 6.0.0(postcss@8.4.21)
       postcss-minify-gradients: 6.0.0(postcss@8.4.21)
       postcss-minify-params: 6.0.0(postcss@8.4.21)
@@ -1824,13 +1824,13 @@ packages:
       postcss: 8.4.21
     dev: true
 
-  /cssnano@6.0.0(postcss@8.4.21):
-    resolution: {integrity: sha512-RGlcbzGhzEBCHuQe3k+Udyj5M00z0pm9S+VurHXFEOXxH+y0sVrJH2sMzoyz2d8N1EScazg+DVvmgyx0lurwwA==}
+  /cssnano@6.0.1(postcss@8.4.21):
+    resolution: {integrity: sha512-fVO1JdJ0LSdIGJq68eIxOqFpIJrZqXUsBt8fkrBcztCQqAjQD51OhZp7tc0ImcbwXD4k7ny84QTV90nZhmqbkg==}
     engines: {node: ^14 || ^16 || >=18.0}
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      cssnano-preset-default: 6.0.0(postcss@8.4.21)
+      cssnano-preset-default: 6.0.1(postcss@8.4.21)
       lilconfig: 2.1.0
       postcss: 8.4.21
     dev: true
@@ -2844,8 +2844,9 @@ packages:
       - '@pixi/utils'
     dev: false
 
-  /postcss-calc@8.2.4(postcss@8.4.21):
-    resolution: {integrity: sha512-SmWMSJmB8MRnnULldx0lQIyhSNvuDl9HfrZkaqqE/WHAhToYsAvDq+yAsA/kIyINDszOp3Rh0GFoNuH5Ypsm3Q==}
+  /postcss-calc@9.0.1(postcss@8.4.21):
+    resolution: {integrity: sha512-TipgjGyzP5QzEhsOZUaIkeO5mKeMFpebWzRogWG/ysonUlnHcq5aJe0jOjpfzUU8PeSaBQnrE8ehR0QA5vs8PQ==}
+    engines: {node: ^14 || ^16 || >=18.0}
     peerDependencies:
       postcss: ^8.2.2
     dependencies:
@@ -2942,8 +2943,8 @@ packages:
       stylehacks: 6.0.0(postcss@8.4.21)
     dev: true
 
-  /postcss-merge-rules@6.0.0(postcss@8.4.21):
-    resolution: {integrity: sha512-rCXkklftzEkniyv3f4mRCQzxD6oE4Quyh61uyWTUbCJ26Pv2hoz+fivJSsSBWxDBeScR4fKCfF3HHTcD7Ybqnw==}
+  /postcss-merge-rules@6.0.1(postcss@8.4.21):
+    resolution: {integrity: sha512-a4tlmJIQo9SCjcfiCcCMg/ZCEe0XTkl/xK0XHBs955GWg9xDX3NwP9pwZ78QUOWB8/0XCjZeJn98Dae0zg6AAw==}
     engines: {node: ^14 || ^16 || >=18.0}
     peerDependencies:
       postcss: ^8.2.15
