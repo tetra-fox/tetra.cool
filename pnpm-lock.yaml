@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@fontsource/alegreya-sans-sc':
-    specifier: 4.5.11
-    version: 4.5.11
+    specifier: 5.0.3
+    version: 5.0.3
   pixi-filters:
     specifier: 5.2.1
     version: 5.2.1(@pixi/core@7.2.4)(@pixi/filter-alpha@7.2.4)(@pixi/filter-blur@7.2.4)
@@ -317,8 +317,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/alegreya-sans-sc@4.5.11:
-    resolution: {integrity: sha512-Lh/yuCOY5s6Kvz3rOWQydj/KTsU8fFnEoaaj3yUahHf7pzJp89sgCkfpbC1Ttwa8gZNld8lhHZDohemSK8gQ+A==}
+  /@fontsource/alegreya-sans-sc@5.0.3:
+    resolution: {integrity: sha512-oxIi86ABLzqqLXjF9V20Hl5kWopS3qHkKjrMq9gEUdsS8PSJnT/gIgIvMzQUnP9oER3S4GxhRSabhTdmTNL+dA==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.8:
