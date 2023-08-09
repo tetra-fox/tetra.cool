@@ -71,8 +71,8 @@ devDependencies:
     specifier: 5.0.4
     version: 5.0.4(postcss-load-config@4.0.1)(postcss@8.4.27)(sass@1.64.2)(svelte@3.59.2)(typescript@5.0.4)
   tslib:
-    specifier: 2.5.3
-    version: 2.5.3
+    specifier: 2.6.1
+    version: 2.6.1
   typescript:
     specifier: 5.0.4
     version: 5.0.4
@@ -3396,8 +3396,8 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
-  /tslib@2.5.3:
-    resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
+  /tslib@2.6.1:
+    resolution: {integrity: sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==}
     dev: true
 
   /tsutils@3.21.0(typescript@5.0.4):
