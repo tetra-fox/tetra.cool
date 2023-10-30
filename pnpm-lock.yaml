@@ -59,17 +59,17 @@ devDependencies:
     specifier: 2.10.1
     version: 2.10.1(prettier@2.8.8)(svelte@3.59.2)
   sass:
-    specifier: 1.69.4
-    version: 1.69.4
+    specifier: 1.69.5
+    version: 1.69.5
   svelte:
     specifier: 3.59.2
     version: 3.59.2
   svelte-check:
     specifier: 3.5.2
-    version: 3.5.2(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.4)(svelte@3.59.2)
+    version: 3.5.2(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.5)(svelte@3.59.2)
   svelte-preprocess:
     specifier: 5.0.4
-    version: 5.0.4(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.4)(svelte@3.59.2)(typescript@5.2.2)
+    version: 5.0.4(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.5)(svelte@3.59.2)(typescript@5.2.2)
   tslib:
     specifier: 2.6.2
     version: 2.6.2
@@ -78,7 +78,7 @@ devDependencies:
     version: 5.2.2
   vite:
     specifier: 4.4.11
-    version: 4.4.11(sass@1.69.4)
+    version: 4.4.11(sass@1.69.5)
 
 packages:
 
@@ -1297,7 +1297,7 @@ packages:
       svelte: 3.59.2
       tiny-glob: 0.2.9
       undici: 5.26.4
-      vite: 4.4.11(sass@1.69.4)
+      vite: 4.4.11(sass@1.69.5)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1313,7 +1313,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.1(svelte@3.59.2)(vite@4.4.11)
       debug: 4.3.4
       svelte: 3.59.2
-      vite: 4.4.11(sass@1.69.4)
+      vite: 4.4.11(sass@1.69.5)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1332,7 +1332,7 @@ packages:
       magic-string: 0.30.0
       svelte: 3.59.2
       svelte-hmr: 0.15.1(svelte@3.59.2)
-      vite: 4.4.11(sass@1.69.4)
+      vite: 4.4.11(sass@1.69.5)
       vitefu: 0.2.4(vite@4.4.11)
     transitivePeerDependencies:
       - supports-color
@@ -3293,8 +3293,8 @@ packages:
       rimraf: 2.7.1
     dev: true
 
-  /sass@1.69.4:
-    resolution: {integrity: sha512-+qEreVhqAy8o++aQfCJwp0sklr2xyEzkm9Pp/Igu9wNPoe7EZEQ8X/MBvvXggI2ql607cxKg/RKOwDj6pp2XDA==}
+  /sass@1.69.5:
+    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -3445,7 +3445,7 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-check@3.5.2(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.4)(svelte@3.59.2):
+  /svelte-check@3.5.2(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.5)(svelte@3.59.2):
     resolution: {integrity: sha512-5a/YWbiH4c+AqAUP+0VneiV5bP8YOk9JL3jwvN+k2PEPLgpu85bjQc5eE67+eIZBBwUEJzmO3I92OqKcqbp3fw==}
     hasBin: true
     peerDependencies:
@@ -3458,7 +3458,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 3.59.2
-      svelte-preprocess: 5.0.4(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.4)(svelte@3.59.2)(typescript@5.2.2)
+      svelte-preprocess: 5.0.4(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.5)(svelte@3.59.2)(typescript@5.2.2)
       typescript: 5.2.2
     transitivePeerDependencies:
       - '@babel/core'
@@ -3481,7 +3481,7 @@ packages:
       svelte: 3.59.2
     dev: true
 
-  /svelte-preprocess@5.0.4(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.4)(svelte@3.59.2)(typescript@5.2.2):
+  /svelte-preprocess@5.0.4(postcss-load-config@4.0.1)(postcss@8.4.31)(sass@1.69.5)(svelte@3.59.2)(typescript@5.2.2):
     resolution: {integrity: sha512-ABia2QegosxOGsVlsSBJvoWeXy1wUKSfF7SWJdTjLAbx/Y3SrVevvvbFNQqrSJw89+lNSsM58SipmZJ5SRi5iw==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -3524,7 +3524,7 @@ packages:
       magic-string: 0.27.0
       postcss: 8.4.31
       postcss-load-config: 4.0.1(postcss@8.4.31)
-      sass: 1.69.4
+      sass: 1.69.5
       sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 3.59.2
@@ -3659,7 +3659,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite@4.4.11(sass@1.69.4):
+  /vite@4.4.11(sass@1.69.5):
     resolution: {integrity: sha512-ksNZJlkcU9b0lBwAGZGGaZHCMqHsc8OpgtoYhsQ4/I2v5cnpmmmqe5pM4nv/4Hn6G/2GhTdj0DhZh2e+Er1q5A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3690,7 +3690,7 @@ packages:
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.28.0
-      sass: 1.69.4
+      sass: 1.69.5
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -3703,7 +3703,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.11(sass@1.69.4)
+      vite: 4.4.11(sass@1.69.5)
     dev: true
 
   /webidl-conversions@3.0.1:
