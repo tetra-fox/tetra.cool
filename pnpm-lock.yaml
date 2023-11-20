@@ -21,10 +21,10 @@ dependencies:
 devDependencies:
   '@sveltejs/adapter-vercel':
     specifier: 2.4.3
-    version: 2.4.3(@sveltejs/kit@1.27.5)
+    version: 2.4.3(@sveltejs/kit@1.27.6)
   '@sveltejs/kit':
-    specifier: 1.27.5
-    version: 1.27.5(svelte@3.59.2)(vite@4.5.0)
+    specifier: 1.27.6
+    version: 1.27.6(svelte@3.59.2)(vite@4.5.0)
   '@typescript-eslint/eslint-plugin':
     specifier: 5.62.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.53.0)(typescript@5.2.2)
@@ -1265,12 +1265,12 @@ packages:
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
     dev: false
 
-  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.27.5):
+  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.27.6):
     resolution: {integrity: sha512-3k/3udwaioFYdKDAgQcWSByB+KCbtjX+ARonYGCtYE0iuxWLStrESxy3SaU+17XD5Frh8w7tfY8ft4TV3ej3Dg==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.27.5(svelte@3.59.2)(vite@4.5.0)
+      '@sveltejs/kit': 1.27.6(svelte@3.59.2)(vite@4.5.0)
       '@vercel/nft': 0.22.6
       esbuild: 0.17.18
     transitivePeerDependencies:
@@ -1278,8 +1278,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit@1.27.5(svelte@3.59.2)(vite@4.5.0):
-    resolution: {integrity: sha512-+L1WPs/ZYNjXoBFoFARypD4aZOjkT51vFpRCtQI45+Fmmfi4Y0dH/8VFlmYD6VlGe89ViIPg7lgf/JpGQ2tr7A==}
+  /@sveltejs/kit@1.27.6(svelte@3.59.2)(vite@4.5.0):
+    resolution: {integrity: sha512-GsjTkMbKzXdbeRg0tk8S7HNShQ4879ftRr0ZHaZfjbig1xQwG57Bvcm9U9/mpLJtCapLbLWUnygKrgcLISLC8A==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -1293,7 +1293,7 @@ packages:
       devalue: 4.3.2
       esm-env: 1.0.0
       kleur: 4.1.5
-      magic-string: 0.30.0
+      magic-string: 0.30.5
       mrmime: 1.0.1
       sade: 1.8.1
       set-cookie-parser: 2.6.0
@@ -2538,13 +2538,6 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.14
-    dev: true
-
-  /magic-string@0.30.0:
-    resolution: {integrity: sha512-LA+31JYDJLs82r2ScLrlz1GjSgu66ZV518eyWT+S8VhyQn/JL0u9MeBOvQMGYiPk1DBiSN9DDMOcXvigJZaViQ==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
   /magic-string@0.30.5:
