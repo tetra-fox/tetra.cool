@@ -42,7 +42,8 @@ canvas {
     color: #ff419d;
     font-weight: 500;
     text-decoration: none;
-    transition: filter 0.6s cubic-bezier(0.13, 0.62, 0, 0.97),
+    transition:
+      filter 0.6s cubic-bezier(0.13, 0.62, 0, 0.97),
       letter-spacing 0.6s cubic-bezier(0.13, 0.62, 0, 0.97);
 
     &:hover {
