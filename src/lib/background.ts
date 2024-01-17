@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import { AdvancedBloomFilter, GlitchFilter, AsciiFilter } from "pixi-filters";
+import { AdvancedBloomFilter, AsciiFilter } from "pixi-filters";
 import stars from "../shaders/stars.frag?raw";
 import tetra from "../img/dog.webp";
 
@@ -14,8 +14,7 @@ export function init(error = false) {
   tetraSprite.anchor.set(0.5);
 
   const bloomFilter = new AdvancedBloomFilter({ threshold: 0.6 });
-  const glitchFilter = new GlitchFilter();
-  tetraSprite.filters = [bloomFilter, glitchFilter];
+  tetraSprite.filters = [bloomFilter];
   tetraSprite.scale.set(0.17);
 
   let elapsed = 0.0;
@@ -26,19 +25,6 @@ export function init(error = false) {
     tetraSprite.x = app.screen.width / (3 / 2);
     tetraSprite.y = Math.cos(elapsed / 50) * 20 + app.screen.height / 2;
     bloomFilter.bloomScale = (Math.sin(elapsed / 100) + 1) / 2;
-
-    // glitch, 1 / 100 chance
-    if (Math.random() < 1 / 100) {
-      glitchFilter.offset = 10;
-      glitchFilter.red = [Math.random() * 10, Math.random() * 10];
-      glitchFilter.blue = [Math.random() * 10, Math.random() * 10];
-      glitchFilter.green = [Math.random() * 10, Math.random() * 10];
-      glitchFilter.shuffle();
-    } else {
-      glitchFilter.red = glitchFilter.blue = glitchFilter.green = [0, 0];
-      glitchFilter.offset = 0;
-    }
-    glitchFilter.refresh();
   });
 
   // stars shader
@@ -63,7 +49,7 @@ export function init(error = false) {
     bg.height = app.renderer.height;
   });
 
-  bg.filters = [starsFilter, glitchFilter];
+  bg.filters = [starsFilter];
   if (error) bg.filters.push(new AsciiFilter(12));
 
   // add objects to stage
