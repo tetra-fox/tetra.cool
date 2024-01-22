@@ -39,7 +39,7 @@
     "@fontsource/alegreya-sans-sc": "5.0.8",
     "pixi-filters": "5.2.1",
     "pixi.js": "7.3.3",
-    "socket.io-client": "4.7.3"
+    "socket.io-client": "4.7.4"
   },
   "engines": {
     "node": ">=20.0.0",
