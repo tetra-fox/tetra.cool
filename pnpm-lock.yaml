@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fontsource/alegreya-sans-sc':
-        specifier: 5.0.13
-        version: 5.0.13
+        specifier: 5.0.14
+        version: 5.0.14
       pixi-filters:
         specifier: 5.2.1
         version: 5.2.1(@pixi/core@7.3.3)(@pixi/filter-alpha@7.4.0(@pixi/core@7.3.3))(@pixi/filter-blur@7.4.0(@pixi/core@7.3.3))
@@ -389,8 +389,8 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@fontsource/alegreya-sans-sc@5.0.13':
-    resolution: {integrity: sha512-GfMuKiZYo/1beYykVAboO+IfDYxdKQfEO3YQdvmzsWrMVxcdYrrDA72iC2NOvfFfjTPbgneG8Ynjfub3HcazFQ==}
+  '@fontsource/alegreya-sans-sc@5.0.14':
+    resolution: {integrity: sha512-9DUqbzcK2TaPpOUq2oJNc6X6L6lZE7b3g1t3cnnE9L84A6nE5l4alyWGoEFmfmLGzPzl1lMmGBtwmXMdBC4lYg==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -2613,7 +2613,7 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
-  '@fontsource/alegreya-sans-sc@5.0.13': {}
+  '@fontsource/alegreya-sans-sc@5.0.14': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
