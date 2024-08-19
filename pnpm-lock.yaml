@@ -12,8 +12,8 @@ importers:
         specifier: 5.0.14
         version: 5.0.14
       pixi-filters:
-        specifier: 5.2.1
-        version: 5.2.1(@pixi/core@7.3.3)(@pixi/filter-alpha@7.4.0(@pixi/core@7.3.3))(@pixi/filter-blur@7.4.0(@pixi/core@7.3.3))
+        specifier: 5.3.0
+        version: 5.3.0(@pixi/core@7.3.3)(@pixi/filter-alpha@7.4.0(@pixi/core@7.3.3))(@pixi/filter-blur@7.4.0(@pixi/core@7.3.3))
       pixi.js:
         specifier: 7.3.3
         version: 7.3.3
@@ -546,8 +546,8 @@ packages:
     peerDependencies:
       '@pixi/core': ^7.0.0-X
 
-  '@pixi/filter-color-gradient@5.2.0':
-    resolution: {integrity: sha512-po3JBEKgfowqhAh2D75Ii1bhNl1gA8Agt+ESIMnSbrTVIkemno8zOVlVmP7xaf8+PKYnX7JWH5buTnnDfA7Hnw==}
+  '@pixi/filter-color-gradient@5.3.0':
+    resolution: {integrity: sha512-dMgBVkSsHOcmTs7HCmlO2hURsk7sT5sOUfnDw46iGqzGgQ+10gCZNaa/oybrDiyEkj+ijyVQVHwapHS3KUgAUQ==}
     peerDependencies:
       '@pixi/core': ^7.0.0-X
 
@@ -631,8 +631,8 @@ packages:
     peerDependencies:
       '@pixi/core': ^7.0.0-X
 
-  '@pixi/filter-hsl-adjustment@5.2.0':
-    resolution: {integrity: sha512-BjmiKIJQuWNqMUjVUpqkM+HaInQzl7dCvYWj8wx9lSAwjzdOCRVVLbRLdO2TwGdwGIHjR3AylMxY1HZK3P4cLA==}
+  '@pixi/filter-hsl-adjustment@5.3.0':
+    resolution: {integrity: sha512-F7gNLrPADGHkToX5toAp0yYs7FenVtHvbC6oC8fydu7/cuDmH0noobI6ShqTcdWJpJbBk1i9LMS93ifiz/13Aw==}
     peerDependencies:
       '@pixi/core': ^7.0.0-X
 
@@ -1841,8 +1841,8 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
-  pixi-filters@5.2.1:
-    resolution: {integrity: sha512-lsRakKJfK0iH+aCCVePQcSb477hFiS20CR2p4u7xS6RO7q5qh5GhAyGqWdgYZlUT5WLSW0kxAV+FddYLs9z9Sg==}
+  pixi-filters@5.3.0:
+    resolution: {integrity: sha512-Dyop7gqgHl5Jc/Bm0QH0CQIDogdICp3hf2CihvgI4AvQebIotPY3yX2MZ/YUcE/7b2aIQQQ2CCt/uc2bBnLRAg==}
 
   pixi.js@7.3.3:
     resolution: {integrity: sha512-EuAyWZBL5lKViCgYkB6dbwkiI/MNht8O8F8956up9vwGEGf659QRHxfVQoRj8zdNGOBbe51XAxQMfLaW/l0Ekg==}
@@ -2773,7 +2773,7 @@ snapshots:
     dependencies:
       '@pixi/core': 7.3.3
 
-  '@pixi/filter-color-gradient@5.2.0(@pixi/core@7.3.3)':
+  '@pixi/filter-color-gradient@5.3.0(@pixi/core@7.3.3)':
     dependencies:
       '@pixi/core': 7.3.3
 
@@ -2842,7 +2842,7 @@ snapshots:
     dependencies:
       '@pixi/core': 7.3.3
 
-  '@pixi/filter-hsl-adjustment@5.2.0(@pixi/core@7.3.3)':
+  '@pixi/filter-hsl-adjustment@5.3.0(@pixi/core@7.3.3)':
     dependencies:
       '@pixi/core': 7.3.3
 
@@ -4101,7 +4101,7 @@ snapshots:
 
   picomatch@2.3.1: {}
 
-  pixi-filters@5.2.1(@pixi/core@7.3.3)(@pixi/filter-alpha@7.4.0(@pixi/core@7.3.3))(@pixi/filter-blur@7.4.0(@pixi/core@7.3.3)):
+  pixi-filters@5.3.0(@pixi/core@7.3.3)(@pixi/filter-alpha@7.4.0(@pixi/core@7.3.3))(@pixi/filter-blur@7.4.0(@pixi/core@7.3.3)):
     dependencies:
       '@pixi/filter-adjustment': 5.1.1(@pixi/core@7.3.3)
       '@pixi/filter-advanced-bloom': 5.1.1(@pixi/core@7.3.3)
@@ -4109,7 +4109,7 @@ snapshots:
       '@pixi/filter-bevel': 5.1.1(@pixi/core@7.3.3)
       '@pixi/filter-bloom': 5.1.1(@pixi/core@7.3.3)(@pixi/filter-alpha@7.4.0(@pixi/core@7.3.3))(@pixi/filter-blur@7.4.0(@pixi/core@7.3.3))
       '@pixi/filter-bulge-pinch': 5.1.1(@pixi/core@7.3.3)
-      '@pixi/filter-color-gradient': 5.2.0(@pixi/core@7.3.3)
+      '@pixi/filter-color-gradient': 5.3.0(@pixi/core@7.3.3)
       '@pixi/filter-color-map': 5.1.1(@pixi/core@7.3.3)
       '@pixi/filter-color-overlay': 5.1.1(@pixi/core@7.3.3)
       '@pixi/filter-color-replace': 5.1.1(@pixi/core@7.3.3)
@@ -4123,7 +4123,7 @@ snapshots:
       '@pixi/filter-glow': 5.2.1(@pixi/core@7.3.3)
       '@pixi/filter-godray': 5.1.1(@pixi/core@7.3.3)
       '@pixi/filter-grayscale': 5.1.1(@pixi/core@7.3.3)
-      '@pixi/filter-hsl-adjustment': 5.2.0(@pixi/core@7.3.3)
+      '@pixi/filter-hsl-adjustment': 5.3.0(@pixi/core@7.3.3)
       '@pixi/filter-kawase-blur': 5.1.1(@pixi/core@7.3.3)
       '@pixi/filter-motion-blur': 5.1.1(@pixi/core@7.3.3)
       '@pixi/filter-multi-color-replace': 5.1.1(@pixi/core@7.3.3)
