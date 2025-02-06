@@ -37,13 +37,13 @@
   },
   "dependencies": {
     "@fontsource/alegreya-sans-sc": "5.1.1",
-    "pixi-filters": "5.3.0",
-    "pixi.js": "7.3.3",
+    "pixi-filters": "6.1.0",
+    "pixi.js": "8.7.3",
     "socket.io-client": "4.8.1"
   },
   "engines": {
-    "node": "20.x",
-    "pnpm": "9.x"
+    "node": ">=20.x",
+    "pnpm": ">=9.x"
   },
   "type": "module"
 }

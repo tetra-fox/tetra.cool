@@ -1,24 +1,44 @@
-import * as PIXI from "pixi.js";
+import {
+  Application,
+  Sprite,
+  Filter,
+  GlProgram,
+  Assets,
+  Graphics,
+  Ticker,
+  Shader,
+  Geometry,
+  Mesh,
+  UniformGroup
+} from "pixi.js";
 import { AdvancedBloomFilter, AsciiFilter } from "pixi-filters";
-import stars from "../shaders/stars.frag?raw";
+import starsFrag from "../shaders/stars.frag?raw";
+import defaultVert from "../shaders/default.vert?raw";
 import tetra from "../img/dog.webp";
 
-export function init(error = false) {
-  const app = new PIXI.Application({ resizeTo: window });
-  document.body.appendChild(app.view as HTMLCanvasElement);
+export async function init(error = false) {
+  const app = new Application();
 
-  const tetraSprite = PIXI.Sprite.from(tetra, {
-    mipmap: PIXI.MIPMAP_MODES.ON
+  await app.init({
+    resizeTo: window,
+    antialias: true,
+    resolution: window.devicePixelRatio,
+    autoDensity: true,
+    preference: "webgl"
   });
 
-  tetraSprite.anchor.set(0.5);
+  document.body.appendChild(app.canvas);
 
   const bloomFilter = new AdvancedBloomFilter({ threshold: 0.6 });
-  tetraSprite.filters = [bloomFilter];
-  tetraSprite.scale.set(0.17);
+  const tetraSprite = new Sprite({
+    anchor: 0.5,
+    scale: 0.17,
+    texture: await Assets.load(tetra),
+    filters: [bloomFilter]
+  });
 
   let elapsed = 0.0;
-  app.ticker.add((delta) => (elapsed += delta));
+  app.ticker.add((ticker) => (elapsed += ticker.deltaTime));
 
   app.ticker.add(() => {
     // float the dog
@@ -28,29 +48,42 @@ export function init(error = false) {
   });
 
   // stars shader
+  const starsFilter = new Filter({
+    glProgram: new GlProgram({
+      fragment: starsFrag,
+      vertex: defaultVert
+    }),
+    resources: {
+      uniforms: new UniformGroup({
+        iResolution: { value: [app.screen.width, app.screen.height, 1], type: "vec3<f32>" },
+        iTime: { value: 0, type: "f32" } // offset the time to look random
+      })
+    }
+  });
+  starsFilter.resources.uniforms.iTime = Math.random() * 1000;
 
-  const color = error ? [0.8, 0.0, 0.2] : [0.3, 0.1, 0.2];
-  const uniforms = { time: 0, color };
+  const bg = new Graphics({
+    filters: [starsFilter]
+  })
+    .rect(0, 0, app.screen.width, app.screen.height)
+    .fill(0xabbe00);
 
-  const starsFilter = new PIXI.Filter(undefined, stars, uniforms);
-
-  const bg = new PIXI.Graphics()
-    .beginFill(0x000000)
-    .drawRect(0, 0, app.screen.width, app.screen.height);
-
-  const seed = Math.random() * 1000;
-
-  app.ticker.add(() => {
-    uniforms.time = elapsed / 60 + seed;
-    if (error) uniforms.time += Math.random() * 1.5 + seed;
+  app.ticker.add((ticker) => {
+    starsFilter.resources.uniforms.iTime += ticker.elapsedMS / 1000;
+    // console.log(starsFilter.resources.uniforms.iTime);
+    if (error) starsFilter.resources.uniforms.iTime += Math.random() * 1.5;
 
     // resize background to screen
-    bg.width = app.renderer.width;
-    bg.height = app.renderer.height;
+    // bg.width = app.screen.width;
+    // bg.height = app.screen.height;
   });
 
-  bg.filters = [starsFilter];
-  if (error) bg.filters.push(new AsciiFilter(12));
+  if (error)
+    (bg.filters as Filter[]).push(
+      new AsciiFilter({
+        size: 12
+      })
+    );
 
   // add objects to stage
   app.stage.addChild(bg);

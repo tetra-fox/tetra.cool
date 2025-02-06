@@ -5,8 +5,8 @@
   // import * as hover from "../ts/hover";
   import { links, song } from "$lib/stores";
 
-  onMount(() => {
-    bg.init();
+  onMount(async () => {
+    await bg.init();
     // hover.init();
   });
 </script>
