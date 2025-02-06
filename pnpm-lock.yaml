@@ -37,10 +37,10 @@ importers:
         specifier: 5.0.3
         version: 5.0.3(svelte@5.19.8)(vite@6.1.0(sass@1.84.0))
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.23.0
+        specifier: 8.23.0
         version: 8.23.0(@typescript-eslint/parser@8.23.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(typescript@5.7.3)
       '@typescript-eslint/parser':
-        specifier: ^8.23.0
+        specifier: 8.23.0
         version: 8.23.0(eslint@9.19.0)(typescript@5.7.3)
       autoprefixer:
         specifier: 10.4.20
@@ -67,7 +67,7 @@ importers:
         specifier: 6.0.1
         version: 6.0.1(postcss@8.5.1)
       prettier:
-        specifier: ^3.4.2
+        specifier: 3.4.2
         version: 3.4.2
       prettier-plugin-svelte:
         specifier: 3.3.3
@@ -85,7 +85,7 @@ importers:
         specifier: 6.0.3
         version: 6.0.3(postcss-load-config@6.0.1(postcss@8.5.1))(postcss@8.5.1)(sass@1.84.0)(svelte@5.19.8)(typescript@5.7.3)
       tslib:
-        specifier: ^2.8.1
+        specifier: 2.8.1
         version: 2.8.1
       typescript:
         specifier: 5.7.3
