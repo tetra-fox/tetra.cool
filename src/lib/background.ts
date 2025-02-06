@@ -1,16 +1,4 @@
-import {
-  Application,
-  Sprite,
-  Filter,
-  GlProgram,
-  Assets,
-  Graphics,
-  Ticker,
-  Shader,
-  Geometry,
-  Mesh,
-  UniformGroup
-} from "pixi.js";
+import { Application, Sprite, Filter, GlProgram, Assets, UniformGroup } from "pixi.js";
 import { AdvancedBloomFilter, AsciiFilter } from "pixi-filters";
 import starsFrag from "../shaders/stars.frag?raw";
 import defaultVert from "../shaders/default.vert?raw";
@@ -24,11 +12,57 @@ export async function init(error = false) {
     antialias: true,
     resolution: window.devicePixelRatio,
     autoDensity: true,
-    preference: "webgl"
+    preference: "webgl" // maybe i'll learn webgpu one day
   });
 
-  document.body.appendChild(app.canvas);
+  let elapsed = 0.0;
+  app.ticker.add((ticker) => (elapsed += ticker.deltaTime));
 
+  // stars shader
+  const starsUniforms = new UniformGroup({
+    iResolution: { value: [app.renderer.width, app.renderer.height, 1], type: "vec3<f32>" },
+    iTime: { value: Math.random() * 1000, type: "f32" },
+    iColor: { value: error ? [1.0, 0.0, 0.2] : [0.3, 0.1, 0.2], type: "vec3<f32>" }
+  });
+  const starsFilter = new Filter({
+    glProgram: new GlProgram({
+      fragment: starsFrag,
+      vertex: defaultVert
+    }),
+    resources: {
+      uniforms: starsUniforms
+    }
+  });
+
+  app.ticker.add((ticker) => {
+    starsUniforms.uniforms.iTime += ticker.elapsedMS / 2000;
+    if (error && Math.random() > 0.97) starsUniforms.uniforms.iTime += Math.random() * 10;
+  });
+
+  // init bg
+  const bg = new Sprite({
+    width: app.renderer.width,
+    height: app.renderer.height,
+    filters: [starsFilter]
+  });
+
+  app.ticker.add(() => {
+    bg.width = app.renderer.width;
+    bg.height = app.renderer.height;
+  });
+
+  if (error)
+    // typescript moment
+    bg.filters = [
+      ...(bg.filters as Filter[]),
+      new AsciiFilter({
+        size: 10
+      })
+    ];
+
+  app.stage.addChild(bg);
+
+  // init tetra
   const bloomFilter = new AdvancedBloomFilter({ threshold: 0.6 });
   const tetraSprite = new Sprite({
     anchor: 0.5,
@@ -37,55 +71,14 @@ export async function init(error = false) {
     filters: [bloomFilter]
   });
 
-  let elapsed = 0.0;
-  app.ticker.add((ticker) => (elapsed += ticker.deltaTime));
-
   app.ticker.add(() => {
-    // float the dog
-    tetraSprite.x = app.screen.width / (3 / 2);
-    tetraSprite.y = Math.cos(elapsed / 50) * 20 + app.screen.height / 2;
+    tetraSprite.x = app.renderer.width / (3 / 2);
+    tetraSprite.y = Math.cos(elapsed / 50) * 20 + app.renderer.height / 2;
     bloomFilter.bloomScale = (Math.sin(elapsed / 100) + 1) / 2;
   });
 
-  // stars shader
-  const starsFilter = new Filter({
-    glProgram: new GlProgram({
-      fragment: starsFrag,
-      vertex: defaultVert
-    }),
-    resources: {
-      uniforms: new UniformGroup({
-        iResolution: { value: [app.screen.width, app.screen.height, 1], type: "vec3<f32>" },
-        iTime: { value: 0, type: "f32" } // offset the time to look random
-      })
-    }
-  });
-  starsFilter.resources.uniforms.iTime = Math.random() * 1000;
-
-  const bg = new Graphics({
-    filters: [starsFilter]
-  })
-    .rect(0, 0, app.screen.width, app.screen.height)
-    .fill(0xabbe00);
-
-  app.ticker.add((ticker) => {
-    starsFilter.resources.uniforms.iTime += ticker.elapsedMS / 1000;
-    // console.log(starsFilter.resources.uniforms.iTime);
-    if (error) starsFilter.resources.uniforms.iTime += Math.random() * 1.5;
-
-    // resize background to screen
-    // bg.width = app.screen.width;
-    // bg.height = app.screen.height;
-  });
-
-  if (error)
-    (bg.filters as Filter[]).push(
-      new AsciiFilter({
-        size: 12
-      })
-    );
-
-  // add objects to stage
-  app.stage.addChild(bg);
   if (!error) app.stage.addChild(tetraSprite);
+
+  // finally, add pixi to the DOM
+  document.body.appendChild(app.canvas);
 }

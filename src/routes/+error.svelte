@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
   import { onMount } from "svelte";
 
   import * as bg from "$lib/background";
@@ -10,8 +10,8 @@
 </script>
 
 <div id="container">
-  <h2>Error {$page.status}</h2>
-  <p>{$page.error?.message}</p>
+  <h2>Error {page.status}</h2>
+  <p>{page.error?.message}</p>
   <div id="links">
     <a href="/">back to home</a>
   </div>
