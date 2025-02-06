@@ -5,8 +5,8 @@
   // import * as hover from "../ts/hover";
   import { links, song } from "$lib/stores";
 
-  onMount(() => {
-    bg.init();
+  onMount(async () => {
+    await bg.init();
     // hover.init();
   });
 </script>
@@ -16,7 +16,7 @@
 </svelte:head>
 
 <div id="container">
-  <span id="logo" title="logo by evie atarax" data-hover />
+  <span id="logo" title="logo by evie atarax" data-hover> </span>
   <span id="nowplaying" title="what i'm currently listening to" class:visible={$song.playing}
     >{$song.artist.toLowerCase()} - {$song.title.toLowerCase()}</span>
   <div id="links">

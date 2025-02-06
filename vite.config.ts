@@ -5,8 +5,8 @@ export default defineConfig({
   plugins: [sveltekit()],
   css: {
     preprocessorOptions: {
-      api: "modern-compiler",
       scss: {
+        api: "modern-compiler",
         additionalData: '@use "/src/variables.scss" as *;'
       }
     }

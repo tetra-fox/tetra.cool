@@ -79,3 +79,15 @@ canvas {
     zoom: 2;
   }
 }
+
+canvas {
+  opacity: 0;
+  animation: fadeIn 600ms ease-out forwards;
+  will-change: opacity;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
