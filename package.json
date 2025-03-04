@@ -39,7 +39,7 @@
     "vite": "6.2.0"
   },
   "dependencies": {
-    "@fontsource/alegreya-sans-sc": "5.1.1",
+    "@fontsource/alegreya-sans-sc": "5.2.5",
     "pixi-filters": "6.1.0",
     "pixi.js": "8.8.1",
     "socket.io-client": "4.8.1"
