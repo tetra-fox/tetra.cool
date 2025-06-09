@@ -13,10 +13,10 @@ importers:
         version: 5.2.6
       pixi-filters:
         specifier: 6.1.2
-        version: 6.1.2(pixi.js@8.9.2)
+        version: 6.1.2(pixi.js@8.10.1)
       pixi.js:
-        specifier: 8.9.2
-        version: 8.9.2
+        specifier: 8.10.1
+        version: 8.10.1
       socket.io-client:
         specifier: 4.8.1
         version: 4.8.1
@@ -614,8 +614,8 @@ packages:
   '@types/css-font-loading-module@0.0.12':
     resolution: {integrity: sha512-x2tZZYkSxXqWvTDgveSynfjq/T2HyiZHXb00j/+gy19yp70PHCizM48XFdjBCWH7eHBD0R5i/pw9yMBP/BH5uA==}
 
-  '@types/earcut@2.1.4':
-    resolution: {integrity: sha512-qp3m9PPz4gULB9MhjGID7wpo3gJ4bTGXm7ltNDsmOvsPduTeHp8wSW9YckBj3mljeOh4F0m2z/0JKAALRKbmLQ==}
+  '@types/earcut@3.0.0':
+    resolution: {integrity: sha512-k/9fOUGO39yd2sCjrbAJvGDEQvRwRnQIZlBz43roGwUZo5SHAmyVvSFyaVVZkicRVCaDXPKlbxrUcBuJoSWunQ==}
 
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
@@ -954,8 +954,8 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
-  earcut@2.2.4:
-    resolution: {integrity: sha512-/pjZsA1b4RPHbeWZQn66SWS8nZZWLQQ23oE3Eam7aroEFGEvwKAsJfZ9ytiEMycfzXWpca4FA9QIOehf7PocBQ==}
+  earcut@3.0.1:
+    resolution: {integrity: sha512-0l1/0gOjESMeQyYaK5IDiPNvFeu93Z/cO0TjZh9eZ1vyCtZnA7KMZ8rQggpsJHIbGSdrqYq9OhuveadOVHCshw==}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -1416,8 +1416,8 @@ packages:
     peerDependencies:
       pixi.js: '>=8.0.0-0'
 
-  pixi.js@8.9.2:
-    resolution: {integrity: sha512-oLFBkOOA/O6OpT5T8o05AxgZB9x9yWNzEQ+WTNZZFoCvfU2GdT4sFTjpVFuHQzgZPmAm/1IFhKdNiXVnlL8PRw==}
+  pixi.js@8.10.1:
+    resolution: {integrity: sha512-wjKJXawhTUxuyKIuwE3jK05eBh5I4GKy+YrRVniURFRkK7pYEvRvnV41dEqz6owSXav/YMXdG5783YDJeamiow==}
 
   postcss-calc@10.1.1:
     resolution: {integrity: sha512-NYEsLHh8DgG/PRH2+G9BTuUdtf9ViS+vdoQ0YA5OQdGsfN4ztiwtDWNtBl9EKeqNMFnIu8IKZ0cLxEQ5r5KVMw==}
@@ -2398,7 +2398,7 @@ snapshots:
 
   '@types/css-font-loading-module@0.0.12': {}
 
-  '@types/earcut@2.1.4': {}
+  '@types/earcut@3.0.0': {}
 
   '@types/estree@1.0.7': {}
 
@@ -2768,7 +2768,7 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  earcut@2.2.4: {}
+  earcut@3.0.1: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -3219,19 +3219,19 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  pixi-filters@6.1.2(pixi.js@8.9.2):
+  pixi-filters@6.1.2(pixi.js@8.10.1):
     dependencies:
       '@types/gradient-parser': 0.1.5
-      pixi.js: 8.9.2
+      pixi.js: 8.10.1
 
-  pixi.js@8.9.2:
+  pixi.js@8.10.1:
     dependencies:
       '@pixi/colord': 2.9.6
       '@types/css-font-loading-module': 0.0.12
-      '@types/earcut': 2.1.4
+      '@types/earcut': 3.0.0
       '@webgpu/types': 0.1.54
       '@xmldom/xmldom': 0.8.10
-      earcut: 2.2.4
+      earcut: 3.0.1
       eventemitter3: 5.0.1
       gifuct-js: 2.1.2
       ismobilejs: 1.1.1
