@@ -20,7 +20,7 @@
     "@sveltejs/kit": "2.31.1",
     "@sveltejs/vite-plugin-svelte": "5.1.1",
     "autoprefixer": "10.4.21",
-    "cssnano": "7.1.0",
+    "cssnano": "7.1.1",
     "eslint": "9.33.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-svelte": "2.46.1",
