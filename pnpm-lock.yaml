@@ -29,10 +29,10 @@ importers:
         version: 9.34.0
       '@sveltejs/adapter-vercel':
         specifier: 5.10.2
-        version: 5.10.2(@sveltejs/kit@2.36.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(rollup@4.40.0)
+        version: 5.10.2(@sveltejs/kit@2.37.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(rollup@4.40.0)
       '@sveltejs/kit':
-        specifier: 2.36.2
-        version: 2.36.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0))
+        specifier: 2.37.1
+        version: 2.37.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0))
       '@sveltejs/vite-plugin-svelte':
         specifier: 5.1.1
         version: 5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0))
@@ -582,8 +582,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.4.0
 
-  '@sveltejs/kit@2.36.2':
-    resolution: {integrity: sha512-WlBGY060nHe4UE5QrDAJAbls5hOsG6mljtrDGkM8jJCDQ4JEcAEH04XrTVmQ0Ex1CU8nzoZto0EE75aiLA3G8Q==}
+  '@sveltejs/kit@2.37.1':
+    resolution: {integrity: sha512-4T9rF2Roe7RGvHfcn6+n92Yc2NF88k7ljFz9+wE0jWxyencqRpadr2/CvlcQbbTXf1ozmFxgMO6af+qm+1mPFw==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -931,8 +931,8 @@ packages:
     resolution: {integrity: sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==}
     engines: {node: '>=8'}
 
-  devalue@5.1.1:
-    resolution: {integrity: sha512-maua5KUiapvEwiEAe+XnlZ3Rh0GD+qI1J/nb9vrJc3muPXvcF/8gXYTWF76+5DAqHyDUtOIImEuo0YKE9mshVw==}
+  devalue@5.3.2:
+    resolution: {integrity: sha512-UDsjUbpQn9kvm68slnrs+mfxwFkIflOhkanmyabZ8zOYk8SMEIbJ3TK+88g70hSIeytu4y18f0z/hYHMTrXIWw==}
 
   dom-serializer@2.0.0:
     resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
@@ -2335,9 +2335,9 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-vercel@5.10.2(@sveltejs/kit@2.36.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(rollup@4.40.0)':
+  '@sveltejs/adapter-vercel@5.10.2(@sveltejs/kit@2.37.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(rollup@4.40.0)':
     dependencies:
-      '@sveltejs/kit': 2.36.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0))
+      '@sveltejs/kit': 2.37.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0))
       '@vercel/nft': 0.30.0(rollup@4.40.0)
       esbuild: 0.25.4
     transitivePeerDependencies:
@@ -2345,7 +2345,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@sveltejs/kit@2.36.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0))':
+  '@sveltejs/kit@2.37.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.7)(vite@6.3.5(sass@1.90.0)))(svelte@5.38.7)(vite@6.3.5(sass@1.90.0))':
     dependencies:
       '@standard-schema/spec': 1.0.0
       '@sveltejs/acorn-typescript': 1.0.5(acorn@8.15.0)
@@ -2353,7 +2353,7 @@ snapshots:
       '@types/cookie': 0.6.0
       acorn: 8.15.0
       cookie: 0.6.0
-      devalue: 5.1.1
+      devalue: 5.3.2
       esm-env: 1.2.2
       kleur: 4.1.5
       magic-string: 0.30.17
@@ -2737,7 +2737,7 @@ snapshots:
 
   detect-libc@2.0.3: {}
 
-  devalue@5.1.1: {}
+  devalue@5.3.2: {}
 
   dom-serializer@2.0.0:
     dependencies:
