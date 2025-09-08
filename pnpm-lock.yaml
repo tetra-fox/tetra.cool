@@ -13,10 +13,10 @@ importers:
         version: 5.2.6
       pixi-filters:
         specifier: 6.1.4
-        version: 6.1.4(pixi.js@8.12.0)
+        version: 6.1.4(pixi.js@8.13.1)
       pixi.js:
-        specifier: 8.12.0
-        version: 8.12.0
+        specifier: 8.13.1
+        version: 8.13.1
       socket.io-client:
         specifier: 4.8.1
         version: 4.8.1
@@ -1409,8 +1409,8 @@ packages:
     peerDependencies:
       pixi.js: '>=8.0.0-0'
 
-  pixi.js@8.12.0:
-    resolution: {integrity: sha512-or7vrH7WajLevu/JnGMdD80JaSpTlXfjwCLtzhg2BL60LWPf1pF0w08Qleiqr1Saj012gevguM//+6HzzVlnfA==}
+  pixi.js@8.13.1:
+    resolution: {integrity: sha512-n7lP3FG8noZV00O6ZTUNWQGg2j6xNjK/8TiGviptb4kfyGJvP4zMvF8s6DR0BymZ8P/lix/3Ye5rqilynpl/+g==}
 
   postcss-calc@10.1.1:
     resolution: {integrity: sha512-NYEsLHh8DgG/PRH2+G9BTuUdtf9ViS+vdoQ0YA5OQdGsfN4ztiwtDWNtBl9EKeqNMFnIu8IKZ0cLxEQ5r5KVMw==}
@@ -1825,6 +1825,10 @@ packages:
   tar@7.4.3:
     resolution: {integrity: sha512-5S7Va8hKfV7W5U6g3aYxXmlPoZVAwUMy9AOKyF2fVuZa2UD3qZjg578OrLRt8PcNN1PleVaL/5/yYATNL0ICUw==}
     engines: {node: '>=18'}
+
+  tiny-lru@11.4.5:
+    resolution: {integrity: sha512-hkcz3FjNJfKXjV4mjQ1OrXSLAehg8Hw+cEZclOVT+5c/cWQWImQ9wolzTjth+dmmDe++p3bme3fTxz6Q4Etsqw==}
+    engines: {node: '>=12'}
 
   tinyglobby@0.2.13:
     resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
@@ -3208,12 +3212,12 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  pixi-filters@6.1.4(pixi.js@8.12.0):
+  pixi-filters@6.1.4(pixi.js@8.13.1):
     dependencies:
       '@types/gradient-parser': 0.1.5
-      pixi.js: 8.12.0
+      pixi.js: 8.13.1
 
-  pixi.js@8.12.0:
+  pixi.js@8.13.1:
     dependencies:
       '@pixi/colord': 2.9.6
       '@types/css-font-loading-module': 0.0.12
@@ -3225,6 +3229,7 @@ snapshots:
       gifuct-js: 2.1.2
       ismobilejs: 1.1.1
       parse-svg-path: 0.1.2
+      tiny-lru: 11.4.5
 
   postcss-calc@10.1.1(postcss@8.5.6):
     dependencies:
@@ -3619,6 +3624,8 @@ snapshots:
       minizlib: 3.0.1
       mkdirp: 3.0.1
       yallist: 5.0.0
+
+  tiny-lru@11.4.5: {}
 
   tinyglobby@0.2.13:
     dependencies:
