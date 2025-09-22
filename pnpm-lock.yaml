@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fontsource/alegreya-sans-sc':
-        specifier: 5.2.6
-        version: 5.2.6
+        specifier: 5.2.7
+        version: 5.2.7
       pixi-filters:
         specifier: 6.1.4
         version: 6.1.4(pixi.js@8.13.2)
@@ -296,8 +296,8 @@ packages:
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource/alegreya-sans-sc@5.2.6':
-    resolution: {integrity: sha512-KljObkx90eiF/5rQl+px5R67W/Nn8coTB8pZLVDj3T7URRbDxnkZcRf+zDSOguN+h9NEOrjh+k8zLQtQ4jP+dg==}
+  '@fontsource/alegreya-sans-sc@5.2.7':
+    resolution: {integrity: sha512-mChJzK2+DJ3zXx+PyHwQIivmvHsuWWYhsYVlZs5addtpDj1AaxtfSGQpN6RlHdQocFxbAevtx6ndvUmN18w7fg==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2120,7 +2120,7 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
-  '@fontsource/alegreya-sans-sc@5.2.6': {}
+  '@fontsource/alegreya-sans-sc@5.2.7': {}
 
   '@humanfs/core@0.19.1': {}
 
