@@ -13,10 +13,10 @@ importers:
         version: 5.2.7
       pixi-filters:
         specifier: 6.1.5
-        version: 6.1.5(pixi.js@8.14.0)
+        version: 6.1.5(pixi.js@8.14.3)
       pixi.js:
-        specifier: 8.14.0
-        version: 8.14.0
+        specifier: 8.14.3
+        version: 8.14.3
       socket.io-client:
         specifier: 4.8.1
         version: 4.8.1
@@ -1405,8 +1405,8 @@ packages:
     peerDependencies:
       pixi.js: '>=8.0.0-0'
 
-  pixi.js@8.14.0:
-    resolution: {integrity: sha512-ituDiEBb1Oqx56RYwTtC6MjPUhPfF/i15fpUv5oEqmzC/ce3SaSumulJcOjKG7+y0J0Ekl9Rl4XTxaUw+MVFZw==}
+  pixi.js@8.14.3:
+    resolution: {integrity: sha512-6xGYARV8D9E/fO1c2NmYn+k2dQ5oZldVm5tNlLQJ8obTlOQXdL5QpMc217qTpRyHVDFaw5eoFCLF1gr6p5ZcjQ==}
 
   postcss-calc@10.1.1:
     resolution: {integrity: sha512-NYEsLHh8DgG/PRH2+G9BTuUdtf9ViS+vdoQ0YA5OQdGsfN4ztiwtDWNtBl9EKeqNMFnIu8IKZ0cLxEQ5r5KVMw==}
@@ -3199,12 +3199,12 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  pixi-filters@6.1.5(pixi.js@8.14.0):
+  pixi-filters@6.1.5(pixi.js@8.14.3):
     dependencies:
       '@types/gradient-parser': 0.1.5
-      pixi.js: 8.14.0
+      pixi.js: 8.14.3
 
-  pixi.js@8.14.0:
+  pixi.js@8.14.3:
     dependencies:
       '@pixi/colord': 2.9.6
       '@types/css-font-loading-module': 0.0.12
