@@ -37,8 +37,8 @@ importers:
         specifier: 5.1.1
         version: 5.1.1(svelte@5.45.8)(vite@6.4.1(sass@1.94.2))
       autoprefixer:
-        specifier: 10.4.22
-        version: 10.4.22(postcss@8.5.6)
+        specifier: 10.4.23
+        version: 10.4.23(postcss@8.5.6)
       cssnano:
         specifier: 7.1.2
         version: 7.1.2(postcss@8.5.6)
@@ -739,8 +739,8 @@ packages:
   async-sema@3.1.1:
     resolution: {integrity: sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==}
 
-  autoprefixer@10.4.22:
-    resolution: {integrity: sha512-ARe0v/t9gO28Bznv6GgqARmVqcWOV3mfgUPn9becPHMiD3o9BwlRgaeccZnwTpZ7Zwqrm+c1sUSsMxIzQzc8Xg==}
+  autoprefixer@10.4.23:
+    resolution: {integrity: sha512-YYTXSFulfwytnjAPlw8QHncHJmlvFKtczb8InXaAx9Q0LbfDnfEYDE55omerIJKihhmU61Ft+cAOSzQVaBUmeA==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -755,6 +755,10 @@ packages:
 
   baseline-browser-mapping@2.8.23:
     resolution: {integrity: sha512-616V5YX4bepJFzNyOfce5Fa8fDJMfoxzOIzDCZwaGL8MKVpFrXqfNUoIpRn9YMI5pXf/VKgzjB4htFMsFKKdiQ==}
+    hasBin: true
+
+  baseline-browser-mapping@2.9.7:
+    resolution: {integrity: sha512-k9xFKplee6KIio3IDbwj+uaCLpqzOwakOgmqzPezM0sFJlFKcg30vk2wOiAJtkTSfx0SSQDSe8q+mWA/fSH5Zg==}
     hasBin: true
 
   bindings@1.5.0:
@@ -778,6 +782,11 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
+  browserslist@4.28.1:
+    resolution: {integrity: sha512-ZC5Bd0LgJXgwGqUknZY/vkUQ04r8NXnJZ3yYi4vDmSiZmC/pdSN0NbNRPxZpbtO4uAfDUAFffO8IZoM3Gj8IkA==}
+    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
+    hasBin: true
+
   callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
@@ -785,11 +794,11 @@ packages:
   caniuse-api@3.0.0:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
 
-  caniuse-lite@1.0.30001753:
-    resolution: {integrity: sha512-Bj5H35MD/ebaOV4iDLqPEtiliTN29qkGtEHCwawWn4cYm+bPJM2NsaP30vtZcnERClMzp52J4+aw2UNbK4o+zw==}
-
   caniuse-lite@1.0.30001755:
     resolution: {integrity: sha512-44V+Jm6ctPj7R52Na4TLi3Zri4dWUljJd+RDm+j8LtNCc/ihLCT+X1TzoOAkRETEWqjuLnh9581Tl80FvK7jVA==}
+
+  caniuse-lite@1.0.30001760:
+    resolution: {integrity: sha512-7AAMPcueWELt1p3mi13HR/LHH0TJLT11cnwDJEs3xA4+CK/PLKeO9Kl1oru24htkyUKtkGCvAx4ohB0Ttry8Dw==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -942,6 +951,9 @@ packages:
 
   electron-to-chromium@1.5.244:
     resolution: {integrity: sha512-OszpBN7xZX4vWMPJwB9illkN/znA8M36GQqQxi6MNy9axWxhOfJyZZJtSLQCpEFLHP2xK33BiWx9aIuIEXVCcw==}
+
+  electron-to-chromium@1.5.267:
+    resolution: {integrity: sha512-0Drusm6MVRXSOJpGbaSVgcQsuB4hEkMpHXaVstcPmhu5LIedxs1xNK/nIxmQIU/RPC0+1/o0AVZfBTkTNJOdUw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1326,10 +1338,6 @@ packages:
     resolution: {integrity: sha512-ieGu42u/Qsa4TFktmaKEwM6MQH0pOWnaB3htzh0JRtx84+Mebc0cbZYN5bC+6WTZ4+77xrL9Pn5m7CV6VIkV7A==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
-
-  normalize-range@0.1.2:
-    resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
-    engines: {node: '>=0.10.0'}
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
@@ -1845,6 +1853,12 @@ packages:
 
   update-browserslist-db@1.1.4:
     resolution: {integrity: sha512-q0SPT4xyU84saUX+tomz1WLkxUbuaJnR1xWt17M7fJtEJigJeWUNGUqrauFXsHnqev9y9JTRGwk13tFBuKby4A==}
+    hasBin: true
+    peerDependencies:
+      browserslist: '>= 4.21.0'
+
+  update-browserslist-db@1.2.2:
+    resolution: {integrity: sha512-E85pfNzMQ9jpKkA7+TJAi4TJN+tBCuWh5rUcS/sv6cFi+1q9LYDwDI5dpUL0u/73EElyQ8d3TEaeW4sPedBqYA==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
@@ -2512,12 +2526,11 @@ snapshots:
 
   async-sema@3.1.1: {}
 
-  autoprefixer@10.4.22(postcss@8.5.6):
+  autoprefixer@10.4.23(postcss@8.5.6):
     dependencies:
-      browserslist: 4.27.0
-      caniuse-lite: 1.0.30001755
+      browserslist: 4.28.1
+      caniuse-lite: 1.0.30001760
       fraction.js: 5.3.4
-      normalize-range: 0.1.2
       picocolors: 1.1.1
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
@@ -2527,6 +2540,8 @@ snapshots:
   balanced-match@1.0.2: {}
 
   baseline-browser-mapping@2.8.23: {}
+
+  baseline-browser-mapping@2.9.7: {}
 
   bindings@1.5.0:
     dependencies:
@@ -2556,18 +2571,26 @@ snapshots:
       node-releases: 2.0.27
       update-browserslist-db: 1.1.4(browserslist@4.27.0)
 
+  browserslist@4.28.1:
+    dependencies:
+      baseline-browser-mapping: 2.9.7
+      caniuse-lite: 1.0.30001760
+      electron-to-chromium: 1.5.267
+      node-releases: 2.0.27
+      update-browserslist-db: 1.2.2(browserslist@4.28.1)
+
   callsites@3.1.0: {}
 
   caniuse-api@3.0.0:
     dependencies:
       browserslist: 4.27.0
-      caniuse-lite: 1.0.30001753
+      caniuse-lite: 1.0.30001755
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
 
-  caniuse-lite@1.0.30001753: {}
-
   caniuse-lite@1.0.30001755: {}
+
+  caniuse-lite@1.0.30001760: {}
 
   chalk@4.1.2:
     dependencies:
@@ -2720,6 +2743,8 @@ snapshots:
   eastasianwidth@0.2.0: {}
 
   electron-to-chromium@1.5.244: {}
+
+  electron-to-chromium@1.5.267: {}
 
   emoji-regex@8.0.0: {}
 
@@ -3103,8 +3128,6 @@ snapshots:
   nopt@8.1.0:
     dependencies:
       abbrev: 3.0.0
-
-  normalize-range@0.1.2: {}
 
   nth-check@2.1.1:
     dependencies:
@@ -3606,6 +3629,12 @@ snapshots:
   update-browserslist-db@1.1.4(browserslist@4.27.0):
     dependencies:
       browserslist: 4.27.0
+      escalade: 3.2.0
+      picocolors: 1.1.1
+
+  update-browserslist-db@1.2.2(browserslist@4.28.1):
+    dependencies:
+      browserslist: 4.28.1
       escalade: 3.2.0
       picocolors: 1.1.1
 
