@@ -18,8 +18,8 @@ importers:
         specifier: 8.14.3
         version: 8.14.3
       socket.io-client:
-        specifier: 4.8.1
-        version: 4.8.1
+        specifier: 4.8.3
+        version: 4.8.3
     devDependencies:
       '@eslint/compat':
         specifier: 1.4.1
@@ -1694,8 +1694,8 @@ packages:
     resolution: {integrity: sha512-BPwJGUeDaDCHihkORDchNyyTvWFhcusy1XMmhEVTQTwGeybFbp8YEmB+njbPnth1FibULBSBVwCQni25XlCUDg==}
     engines: {node: '>=18'}
 
-  socket.io-client@4.8.1:
-    resolution: {integrity: sha512-hJVXfu3E28NmzGk8o1sHhN3om52tRvwYeidbj7xKy2eIIse5IoKX3USlS6Tqt3BHAtflLIkCQBkzVrEEfWUyYQ==}
+  socket.io-client@4.8.3:
+    resolution: {integrity: sha512-uP0bpjWrjQmUt5DTHq9RuoCBdFJF10cdX9X+a368j/Ft0wmaVgxlrjvK3kjvgCODOMMOz9lcaRzxmso0bTWZ/g==}
     engines: {node: '>=10.0.0'}
 
   socket.io-parser@4.2.4:
@@ -3466,10 +3466,10 @@ snapshots:
       mrmime: 2.0.0
       totalist: 3.0.1
 
-  socket.io-client@4.8.1:
+  socket.io-client@4.8.3:
     dependencies:
       '@socket.io/component-emitter': 3.1.2
-      debug: 4.3.7
+      debug: 4.4.1
       engine.io-client: 6.6.3
       socket.io-parser: 4.2.4
     transitivePeerDependencies:
