@@ -29,10 +29,10 @@ importers:
         version: 9.39.2
       '@sveltejs/adapter-vercel':
         specifier: 5.10.3
-        version: 5.10.3(@sveltejs/kit@2.50.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3)))(rollup@4.40.0)
+        version: 5.10.3(@sveltejs/kit@2.50.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3)))(rollup@4.40.0)
       '@sveltejs/kit':
-        specifier: 2.50.1
-        version: 2.50.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3))
+        specifier: 2.50.2
+        version: 2.50.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3))
       '@sveltejs/vite-plugin-svelte':
         specifier: 5.1.1
         version: 5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3))
@@ -597,8 +597,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.4.0
 
-  '@sveltejs/kit@2.50.1':
-    resolution: {integrity: sha512-XRHD2i3zC4ukhz2iCQzO4mbsts081PAZnnMAQ7LNpWeYgeBmwMsalf0FGSwhFXBbtr2XViPKnFJBDCckWqrsLw==}
+  '@sveltejs/kit@2.50.2':
+    resolution: {integrity: sha512-875hTUkEbz+MyJIxWbQjfMaekqdmEKUUfR7JyKcpfMRZqcGyrO9Gd+iS1D/Dx8LpE5FEtutWGOtlAh4ReSAiOA==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -1177,6 +1177,7 @@ packages:
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   globals@14.0.0:
@@ -1719,8 +1720,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  set-cookie-parser@2.7.1:
-    resolution: {integrity: sha512-IOc8uWeOZgnb3ptbCURJWNjWUPcO3ZnTTdzsurqERrP6nPyv+paC55vJM0LpOlT2ne+Ix+9+CRG1MNLlyZ4GjQ==}
+  set-cookie-parser@3.0.1:
+    resolution: {integrity: sha512-n7Z7dXZhJbwuAHhNzkTti6Aw9QDDjZtm3JTpTGATIdNzdQz5GuFs22w90BcvF4INfnrL5xrX3oGsuqO5Dx3A1Q==}
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -1846,7 +1847,7 @@ packages:
   tar@7.4.3:
     resolution: {integrity: sha512-5S7Va8hKfV7W5U6g3aYxXmlPoZVAwUMy9AOKyF2fVuZa2UD3qZjg578OrLRt8PcNN1PleVaL/5/yYATNL0ICUw==}
     engines: {node: '>=18'}
-    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   tiny-lru@11.4.5:
     resolution: {integrity: sha512-hkcz3FjNJfKXjV4mjQ1OrXSLAehg8Hw+cEZclOVT+5c/cWQWImQ9wolzTjth+dmmDe++p3bme3fTxz6Q4Etsqw==}
@@ -2364,9 +2365,9 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-vercel@5.10.3(@sveltejs/kit@2.50.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3)))(rollup@4.40.0)':
+  '@sveltejs/adapter-vercel@5.10.3(@sveltejs/kit@2.50.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3)))(rollup@4.40.0)':
     dependencies:
-      '@sveltejs/kit': 2.50.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3))
+      '@sveltejs/kit': 2.50.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3))
       '@vercel/nft': 0.30.0(rollup@4.40.0)
       esbuild: 0.25.4
     transitivePeerDependencies:
@@ -2374,7 +2375,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@sveltejs/kit@2.50.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3))':
+  '@sveltejs/kit@2.50.2(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.49.1)(vite@6.4.1(sass@1.97.3)))(svelte@5.49.1)(typescript@5.9.3)(vite@6.4.1(sass@1.97.3))':
     dependencies:
       '@standard-schema/spec': 1.0.0
       '@sveltejs/acorn-typescript': 1.0.5(acorn@8.15.0)
@@ -2388,7 +2389,7 @@ snapshots:
       magic-string: 0.30.17
       mrmime: 2.0.0
       sade: 1.8.1
-      set-cookie-parser: 2.7.1
+      set-cookie-parser: 3.0.1
       sirv: 3.0.0
       svelte: 5.49.1
       vite: 6.4.1(sass@1.97.3)
@@ -3510,7 +3511,7 @@ snapshots:
 
   semver@7.7.3: {}
 
-  set-cookie-parser@2.7.1: {}
+  set-cookie-parser@3.0.1: {}
 
   shebang-command@2.0.0:
     dependencies:
