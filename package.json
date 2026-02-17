@@ -14,7 +14,7 @@
     "fmt": "pnpm format"
   },
   "devDependencies": {
-    "@eslint/compat": "1.4.1",
+    "@eslint/compat": "2.0.2",
     "@eslint/js": "9.39.2",
     "@sveltejs/adapter-vercel": "5.10.3",
     "@sveltejs/kit": "2.52.0",
