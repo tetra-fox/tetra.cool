@@ -45,7 +45,7 @@
     "socket.io-client": "4.8.3"
   },
   "engines": {
-    "node": "^22.0.0"
+    "node": "^24.0.0"
   },
   "type": "module"
 }
