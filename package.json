@@ -41,7 +41,7 @@
   "dependencies": {
     "@fontsource/alegreya-sans-sc": "5.2.7",
     "pixi-filters": "6.1.5",
-    "pixi.js": "8.14.3",
+    "pixi.js": "8.17.1",
     "socket.io-client": "4.8.3"
   },
   "engines": {

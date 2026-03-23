@@ -13,10 +13,10 @@ importers:
         version: 5.2.7
       pixi-filters:
         specifier: 6.1.5
-        version: 6.1.5(pixi.js@8.14.3)
+        version: 6.1.5(pixi.js@8.17.1)
       pixi.js:
-        specifier: 8.14.3
-        version: 8.14.3
+        specifier: 8.17.1
+        version: 8.17.1
       socket.io-client:
         specifier: 4.8.3
         version: 4.8.3
@@ -621,9 +621,6 @@ packages:
   '@types/cookie@0.6.0':
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
 
-  '@types/css-font-loading-module@0.0.12':
-    resolution: {integrity: sha512-x2tZZYkSxXqWvTDgveSynfjq/T2HyiZHXb00j/+gy19yp70PHCizM48XFdjBCWH7eHBD0R5i/pw9yMBP/BH5uA==}
-
   '@types/earcut@3.0.0':
     resolution: {integrity: sha512-k/9fOUGO39yd2sCjrbAJvGDEQvRwRnQIZlBz43roGwUZo5SHAmyVvSFyaVVZkicRVCaDXPKlbxrUcBuJoSWunQ==}
 
@@ -703,11 +700,11 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@webgpu/types@0.1.54':
-    resolution: {integrity: sha512-81oaalC8LFrXjhsczomEQ0u3jG+TqE6V9QHLA8GNZq/Rnot0KDugu3LhSYSlie8tSdooAN1Hov05asrUUp9qgg==}
+  '@webgpu/types@0.1.69':
+    resolution: {integrity: sha512-RPmm6kgRbI8e98zSD3RVACvnuktIja5+yLgDAkTmxLr90BEwdTXRQWNLF3ETTTyH/8mKhznZuN5AveXYFEsMGQ==}
 
-  '@xmldom/xmldom@0.8.10':
-    resolution: {integrity: sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==}
+  '@xmldom/xmldom@0.8.11':
+    resolution: {integrity: sha512-cQzWCtO6C8TQiYl1ruKNn2U6Ao4o4WBBcbL61yJl84x+j5sOWWFU9X7DpND8XZG3daDppSsigMdfAIl2upQBRw==}
     engines: {node: '>=10.0.0'}
 
   abbrev@3.0.0:
@@ -1430,8 +1427,8 @@ packages:
     peerDependencies:
       pixi.js: '>=8.0.0-0'
 
-  pixi.js@8.14.3:
-    resolution: {integrity: sha512-6xGYARV8D9E/fO1c2NmYn+k2dQ5oZldVm5tNlLQJ8obTlOQXdL5QpMc217qTpRyHVDFaw5eoFCLF1gr6p5ZcjQ==}
+  pixi.js@8.17.1:
+    resolution: {integrity: sha512-OB4TpZHrP5RYy+7FqmFrAc0IHRhfOoNIfF4sVeinvK3aG1r2pYrSMneJAKi9+WvGKC70Dj7GEpZ2OZGB6o/xdg==}
 
   postcss-calc@10.1.1:
     resolution: {integrity: sha512-NYEsLHh8DgG/PRH2+G9BTuUdtf9ViS+vdoQ0YA5OQdGsfN4ztiwtDWNtBl9EKeqNMFnIu8IKZ0cLxEQ5r5KVMw==}
@@ -1848,8 +1845,8 @@ packages:
     engines: {node: '>=18'}
     deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
-  tiny-lru@11.4.5:
-    resolution: {integrity: sha512-hkcz3FjNJfKXjV4mjQ1OrXSLAehg8Hw+cEZclOVT+5c/cWQWImQ9wolzTjth+dmmDe++p3bme3fTxz6Q4Etsqw==}
+  tiny-lru@11.4.7:
+    resolution: {integrity: sha512-w/Te7uMUVeH0CR8vZIjr+XiN41V+30lkDdK+NRIDCUYKKuL9VcmaUEmaPISuwGhLlrTGh5yu18lENtR9axSxYw==}
     engines: {node: '>=12'}
 
   tinyglobby@0.2.13:
@@ -2405,8 +2402,6 @@ snapshots:
 
   '@types/cookie@0.6.0': {}
 
-  '@types/css-font-loading-module@0.0.12': {}
-
   '@types/earcut@3.0.0': {}
 
   '@types/estree@1.0.7': {}
@@ -2527,9 +2522,9 @@ snapshots:
       - rollup
       - supports-color
 
-  '@webgpu/types@0.1.54': {}
+  '@webgpu/types@0.1.69': {}
 
-  '@xmldom/xmldom@0.8.10': {}
+  '@xmldom/xmldom@0.8.11': {}
 
   abbrev@3.0.0: {}
 
@@ -3224,24 +3219,23 @@ snapshots:
 
   picomatch@4.0.3: {}
 
-  pixi-filters@6.1.5(pixi.js@8.14.3):
+  pixi-filters@6.1.5(pixi.js@8.17.1):
     dependencies:
       '@types/gradient-parser': 0.1.5
-      pixi.js: 8.14.3
+      pixi.js: 8.17.1
 
-  pixi.js@8.14.3:
+  pixi.js@8.17.1:
     dependencies:
       '@pixi/colord': 2.9.6
-      '@types/css-font-loading-module': 0.0.12
       '@types/earcut': 3.0.0
-      '@webgpu/types': 0.1.54
-      '@xmldom/xmldom': 0.8.10
+      '@webgpu/types': 0.1.69
+      '@xmldom/xmldom': 0.8.11
       earcut: 3.0.2
       eventemitter3: 5.0.1
       gifuct-js: 2.1.2
       ismobilejs: 1.1.1
       parse-svg-path: 0.1.2
-      tiny-lru: 11.4.5
+      tiny-lru: 11.4.7
 
   postcss-calc@10.1.1(postcss@8.5.8):
     dependencies:
@@ -3638,7 +3632,7 @@ snapshots:
       mkdirp: 3.0.1
       yallist: 5.0.0
 
-  tiny-lru@11.4.5: {}
+  tiny-lru@11.4.7: {}
 
   tinyglobby@0.2.13:
     dependencies:
