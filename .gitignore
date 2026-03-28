@@ -7,3 +7,10 @@ node_modules
 .env
 .env.*
 !.env.example
+# Cloudflare Types
+/worker-configuration.d.ts
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
