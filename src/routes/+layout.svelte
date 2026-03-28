@@ -1,5 +1,6 @@
 <script lang="ts">
-  import "../app.scss";
+  import "@fontsource/alegreya-sans-sc";
+  import "../app.css";
 </script>
 
 <slot />
